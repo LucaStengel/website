@@ -6,7 +6,7 @@
     <title>SC Hammer Terminkalender</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Roboto, sans-serif;
             text-align: center;
             margin-top: 50px;
         }
@@ -18,7 +18,7 @@
         }
 
         th, td {
-            border: 1px solid #ddd;
+            border:2px solid #ddd;
             padding: 10px;
             text-align: center;
             width: 40px;
@@ -26,7 +26,7 @@
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #edd145;
         }
 
         button {
@@ -37,6 +37,8 @@
     </style>
 </head>
 <body>
+
+
 
     <h1 id="currentMonth"></h1>
 
@@ -55,12 +57,20 @@
         <tbody id="calendarBody">
             <!-- Tage des Monats werden hier dynamisch eingefügt -->
         </tbody>
-
-        <a href="contact.html"></a>
+        
     </table>
+
+
+    <p>Hier können Sie uns erreichen:</p>
+    <a href="/contact.html"></a>
+
 
     <button onclick="prevMonth()">Vorheriger Monat</button>
     <button onclick="nextMonth()">Nächster Monat</button>
+
+
+
+
 
     <script>
         let currentDate = new Date();  // Verschiebe die Deklaration hier, um sie global zu machen
