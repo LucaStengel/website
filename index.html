@@ -1,12 +1,122 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Monatskalender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hallo!</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum maxime consequuntur cum? Soluta consequatur commodi alias saepe. Iusto, sapiente, beatae molestias, dicta fugit quia vel repudiandae cum excepturi voluptates doloremque?</p>
+
+    <h1 id="currentMonth"></h1>
+
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th>Mo</th>
+                <th>Di</th>
+                <th>Mi</th>
+                <th>Do</th>
+                <th>Fr</th>
+                <th>Sa</th>
+                <th>So</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody">
+            <!-- Tage des Monats werden hier dynamisch eingefügt -->
+        </tbody>
+    </table>
+
+    <button onclick="prevMonth()">Vorheriger Monat</button>
+    <button onclick="nextMonth()">Nächster Monat</button>
+
+    <script>
+        // Funktion zur Anzeige des aktuellen Monats
+        function showCurrentMonth() {
+            const currentDate = new Date();
+            const options = { month: 'long', year: 'numeric' };
+            document.getElementById('currentMonth').innerText = currentDate.toLocaleDateString('de-DE', options);
+        }
+
+        // Funktion zur Anzeige der Tage im Kalender für den aktuellen Monat
+        function showCalendar() {
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+
+            const calendarBody = document.getElementById('calendarBody');
+            calendarBody.innerHTML = '';
+
+            let currentDay = firstDay;
+
+            while (currentDay <= lastDay) {
+                const row = document.createElement('tr');
+
+                for (let i = 0; i < 7; i++) {
+                    const cell = document.createElement('td');
+
+                    if (currentDay.getMonth() === month) {
+                        cell.innerText = currentDay.getDate();
+                    }
+
+                    row.appendChild(cell);
+                    currentDay.setDate(currentDay.getDate() + 1);
+                }
+
+                calendarBody.appendChild(row);
+            }
+        }
+
+        // Funktion zum Wechseln zum vorherigen Monat
+        function prevMonth() {
+            const currentDate = new Date();
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            showCurrentMonth();
+            showCalendar();
+        }
+
+        // Funktion zum Wechseln zum nächsten Monat
+        function nextMonth() {
+            const currentDate = new Date();
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            showCurrentMonth();
+            showCalendar();
+        }
+
+        // Initialisierung beim Laden der Seite
+        showCurrentMonth();
+        showCalendar();
+    </script>
+
 </body>
 </html>
