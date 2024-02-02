@@ -14,21 +14,19 @@
             margin-top: 10px;
         }
 
-        hr {
-            position: static;
-            top: 2%;
-            border: none;
-            height: 17%;
-            background-color: #ededed;
-            width: 80%; /* Hier wird die Breite auf 80% des übergeordneten Containers gesetzt */
-            margin: auto; /* Zentriert den Balken und setzt einen vertikalen Abstand */
+        .graue-box {
+            width: 100%; /* Breite der Box */
+            height: 10%; /* Höhe der Box */
+            background-color: #eaeaea; /* Graue Hintergrundfarbe */
+            /*margin: 20px; /* Außenabstand für Abstand zu anderen Elementen */
+            padding: 10px; /* Innenabstand für den Inhalt innerhalb der Box */
         }
 
         img {
             position: relative; /* Positionierung relativ zum übergeordneten Container */
             top: 4%; /* Abstand vom oberen Rand auf 0 setzen */
-            left: 3%; /* Abstand vom linken Rand auf 0 setzen */
-            width: 7%; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
+            left: 4%; /* Abstand vom linken Rand auf 0 setzen */
+            width: 20%; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
             height: auto; /* Die Höhe wird automatisch proportional zur Breite angepasst */
         }
 
@@ -84,9 +82,10 @@
     </style>
 </head>
 <body>
-    <hr>
 
-    <img src="pictures/SC_Hammer_Logo_Tennis_4c.png" alt="Logo_SC_Hammer">
+    <div class="graue-box">
+        <img src="pictures/SC_Hammer_Logo_Tennis_4c.png" alt="Logo_SC_Hammer">
+    </div>
 
     <h1 id="currentMonth"></h1>
     
