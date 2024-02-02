@@ -14,16 +14,8 @@
             margin-top: 10px;
         }
 
-        img {
-            position: absolute; /* Positionierung relativ zum übergeordneten Container */
-            top: 4%; /* Abstand vom oberen Rand auf 0 setzen */
-            left: 3%; /* Abstand vom linken Rand auf 0 setzen */
-            width: 7%; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
-            height: auto; /* Die Höhe wird automatisch proportional zur Breite angepasst */
-        }
-
         hr {
-            position: static; /* Positionierung relativ zum übergeordneten Container */
+            position: static;
             top: 2%;
             border: none;
             height: 17%;
@@ -32,8 +24,17 @@
             margin: auto; /* Zentriert den Balken und setzt einen vertikalen Abstand */
         }
 
+        img {
+            position: relative; /* Positionierung relativ zum übergeordneten Container */
+            top: 4%; /* Abstand vom oberen Rand auf 0 setzen */
+            left: 3%; /* Abstand vom linken Rand auf 0 setzen */
+            width: 7%; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
+            height: auto; /* Die Höhe wird automatisch proportional zur Breite angepasst */
+        }
+
         h1 {
-        margin-top: 70%;
+            position: static;
+            margin-top: 20%;
         }
 
         table {
