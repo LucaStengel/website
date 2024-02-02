@@ -3,9 +3,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .graue-box {
+            width: 98.6%; /* Breite der Box */
+            height: 70px; /* Höhe der Box */
+            background-color: #eaeaea; /* Graue Hintergrundfarbe */
+            /*margin: 10px; /* Außenabstand für Abstand zu anderen Elementen */
+            padding: 10px; /* Innenabstand für den Inhalt innerhalb der Box */
+        }
+
+        img {
+            position: absolute; /* Positionierung relativ zum übergeordneten Container */
+            top: 2%; /* Abstand vom oberen Rand auf 0 setzen */
+            left: 2%; /* Abstand vom linken Rand auf 0 setzen */
+            width: auto; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
+            height: 10%; /* Die Höhe wird automatisch proportional zur Breite angepasst */
+        }
+    </style>    
 </head>
 <body>
-    <h1>Kontakt</h1>
+    <div class="graue-box">
+        <img src="pictures/SC_Hammer_Logo_Tennis_4c.png" alt="Logo_SC_Hammer">
+        <h1>Kontakt</h1>
+    </div>
+
     <p>Email: schammertennis@gmail.com</p>
 </body>
 </html>
