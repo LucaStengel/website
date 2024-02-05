@@ -1,150 +1,93 @@
 <!DOCTYPE html>
-
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
-    <title>SC Hammer Tennisabteilung</title>
+    <title>SC Hammer Terminkalender</title>
+
 
     <style>
-        body
-        {
-            font-family: Courier New, sans-serif;
+        body {
+            font-family: Roboto, sans-serif;
             text-align: center;
-            margin-top: 0px;
-            background-color: #e6cc09; /* Graue Hintergrundfarbe */
+            margin-top: 10px;
         }
 
         .graue-box {
-            position: absolute; /* Positionierung relativ zum übergeordneten Container */
-            top: 0%;
             width: 100%; /* Breite der Box */
-            height: 10%; /* Höhe der Box */
+            height: 100%; /* Höhe der Box */
             background-color: #eaeaea; /* Graue Hintergrundfarbe */
-            opacity: 100%;
             /*margin: 10px; /* Außenabstand für Abstand zu anderen Elementen */
             padding: 10px; /* Innenabstand für den Inhalt innerhalb der Box */
         }
 
         img {
-            position: relative; /* Positionierung relativ zum übergeordneten Container */
+            position: absolute; /* Positionierung relativ zum übergeordneten Container */
             top: 2%; /* Abstand vom oberen Rand auf 0 setzen */
-            left: -45.8%; /* Abstand vom linken Rand auf 0 setzen */
+            left: 2%; /* Abstand vom linken Rand auf 0 setzen */
             width: auto; /* Das Bild wird die volle Breite des übergeordneten Containers einnehmen */
-            height: 100%; /* Die Höhe wird automatisch proportional zur Breite angepasst */
+            height: 10%; /* Die Höhe wird automatisch proportional zur Breite angepasst */
         }
 
-        table
-        {
+        h1 {
+            position: static;
+            margin-top: 10%;
+        }
+
+        table {
             margin: 0 auto;
             border-collapse: collapse;
             width: 70%;
         }
 
-        h1
-        {
-            position: static;
-            margin-top: 10%;
-        }
 
         th, td {
             border:2px solid #ddd;
             padding: 10px;
             text-align: center;
             width: 40px;
-            height: 70px;
+            height: 40px;
+        }
+
+        th {
             background-color: #edd145;
         }
 
-        th
-        {
-            background-color: #e3e3e3;
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
         }
 
-        button
-        {
-        background-color: transparent;
-        background-repeat: no-repeat;
-        border: 1px;
-        cursor: pointer;
-        overflow: hidden;
-        outline: none;
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
+            /* 1. Textdekoration entfernen */
+        a {
+            text-decoration: none;
+            /* 2. Farbe ändern */
+            color: #ffffff;
+            /* 3. Hovern-Effekte hinzufügen */
+            transition: color 0.3s ease-in-out;
+            /* 7. Rahmen und Hintergrund hinzufügen */
+            border: 1px solid #959595;
+            padding: 5px 10px;
+            background-color: #c9c7c7;
         }
 
-        /* Dropdown Button */
-        .dropbtn
-        {
-        background-color: #1b5920;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
+        /* 4. Unterstreichung nur bei Hover */
+        a:hover {
+            border-bottom: 1px solid #ffffff;
+            /* 3. Hovern-Effekte hinzufügen */
+            color: #ffffff;
         }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-        position: relative;
-        display: inline-block;
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #ddd;}
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {display: block;}
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
-
     </style>
-
 </head>
-
-
 <body>
 
     <div class="graue-box">
         <img src="pictures/SC_Hammer_Logo_Tennis_4c.png" alt="Logo_SC_Hammer">
     </div>
-
-
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-    </div>
-
+    
+    <h>SC Hammer Tennis</h>
 
     <h1 id="currentMonth"></h1>
     
@@ -160,19 +103,22 @@
                 <th>So</th>
             </tr>
         </thead>
-        
-    <tbody id="calendarBody">
+        <tbody id="calendarBody">
             <!-- Tage des Monats werden hier dynamisch eingefügt -->
-    </tbody>
+        </tbody>
+        
+    </table>
+
+
+   
 
 
     <button onclick="prevMonth()">Vorheriger Monat</button>
     <button onclick="nextMonth()">Nächster Monat</button>
 
 
-    <py-script>
-        print("Hallo")
-    </py-script>
+    <p>Hier könnt ihr uns errreichen: <a href="/schammertennis/contact">Kontakt</a></p>
+
 
     <script>
         let currentDate = new Date();  // Verschiebe die Deklaration hier, um sie global zu machen
@@ -232,6 +178,6 @@
         showCurrentMonth();
         showCalendar();
     </script>
+
 </body>
 </html>
-
