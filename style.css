@@ -1,49 +1,54 @@
-body{
-    background-color: rgb(229, 170, 122);
-    background-image: url("assets/background.JPG");
-    background-repeat: no-repeat;
-    background-position: top;
+body {
+    margin: 0;
+    padding: 0;
+    font:italic;
+    background-image: url('assets/background.JPG'); /* Passe den Dateinamen und den Pfad an */
     background-size: cover;
-
-    font-style: italic;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Schriftfarbe für den Text auf dem Hintergrundbild */
 }
 
-#header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 15%;
+header {
+    background-color: rgba(214, 214, 214, 0.7); /* Hintergrundfarbe für den oberen Bereich */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#ueberschrift {
-    background: #eeeeee;
-    filter: alpha(opacity=60);
-    /* IE */
-    -moz-opacity: 0.6;
-    /* Mozilla */
-    opacity: 0.6;
-    /* CSS3 */
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+nav {
+    display: flex;
 }
 
-#text {
-    position: relative;
+nav a {
+    color: #202020;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+h1 {
+    color: #565656;
+    flex-grow: 1; /* Nimmt den verfügbaren Platz, um die Überschrift in die Mitte zu schieben */
     text-align: center;
-    font-size:50px;
-    font-weight: bold;
-    top: 25%;
-    left: -2.5%;
 }
 
-.logo{
+/* Dropdown-Menü-Styling (vereinfacht) */
+.dropdown {
     position: relative;
-    top:9%;
-    left:1%;
-    float: left;
-    height:80%;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #565656;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
