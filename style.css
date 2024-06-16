@@ -16,39 +16,3 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-nav {
-    display: flex;
-}
-
-nav a {
-    color: #202020;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-}
-
-h1 {
-    color: #565656;
-    flex-grow: 1; /* Nimmt den verfügbaren Platz, um die Überschrift in die Mitte zu schieben */
-    text-align: center;
-}
-
-/* Dropdown-Menü-Styling (vereinfacht) */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #565656;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
