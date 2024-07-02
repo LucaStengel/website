@@ -27,7 +27,7 @@ header {
 .image-container {
     border: 2px solid #fff;
     margin: 10px;
-    width: 200px; /* Breite der Vierecke */
+    width: 320px; /* Breite der Vierecke */
     height: 200px; /* Höhe der Vierecke */
     overflow: hidden;
 }
