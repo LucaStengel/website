@@ -3,11 +3,37 @@ body {
     margin: 10;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: top;
-    font-family: Courier 'Courier New', Courier, monospace;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
     color: white; /* Schriftfarbe */
     font-size: 25px; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
     text-align: center; /* Textausrichtung */
+}
+
+header {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-container {
+    border: 2px solid #fff;
+    margin: 10px;
+    width: 200px; /* Breite der Vierecke */
+    height: 200px; /* Höhe der Vierecke */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild skalieren, um den Container zu füllen */
 }
