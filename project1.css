@@ -85,18 +85,23 @@ header h1 {
     border-width: 10px;
 }
 
-/* Für Mobilgeräte */
+
+/* Media Query für mobile Geräte */
 @media (max-width: 768px) {
     .gallery-container {
-        flex-direction: column; /* Die Bilder untereinander anordnen */
-        height: auto;
+        flex-direction: column; /* Elemente untereinander anordnen */
+        align-items: center; /* Zentrieren der Elemente */
     }
 
     .image-display {
         width: 90%; /* Bild nimmt 100% der Breite ein */
     }
 
-    .thumbnail-menu {
+    .thumbnail-gallery-container {
+        width: 100%; /* Thumbnail Container voll ausnutzen */
+    }
+
+    .thumbnail-gallery {
         width: 100%; /* Menü nimmt die volle Breite ein */
         height: auto;
         flex-direction: row; /* Horizontal statt vertikal */
@@ -105,10 +110,5 @@ header h1 {
         justify-content: center;
         padding: 5px;
     }
-
-    .thumbnail-menu img {
-        width: auto; /* Breite der Thumbnails automatisch anpassen */
-        height: 100px; /* Feste Höhe für die Thumbnails */
-        margin: 0 5px;
-    }
 }
+
