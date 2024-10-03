@@ -29,10 +29,9 @@ header {
 
 .image-container {
     border: 4px solid #fff;
-    width: 30%; /* Vierecke gleichmäßig aufteilen mit Abstand */
-    height: 45%; /* Höhe der Vierecke */
+    width: 320px; /* Vierecke gleichmäßig aufteilen mit Abstand */
+    height: 600px; /* Höhe der Vierecke */
     overflow: hidden;
-    margin-left: 2.8%;
     box-sizing: border-box; /* Um Padding und Border in der Breite/Höhe zu berücksichtigen */
 }
 
