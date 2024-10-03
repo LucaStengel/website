@@ -1,28 +1,29 @@
 body {
     background-color: #FFE2C4;
-    margin: 10px; /* Korrigierter margin Wert */
+    margin: 10px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    font-family: 'Monaco';
-    color: white; /* Schriftfarbe */
-    font-size: 25px; /* Schriftgröße */
-    font-weight: normal; /* Schriftstärke */
-    text-align: center; /* Textausrichtung */
+    font-family: 'Geneva';
+    color: white;
+    font-size: 25px;
+    text-align: center;
     letter-spacing: -1px;
 }
 
 header {
     display: flex;
-    align-items: center; /* Vertikale Ausrichtung */
-    justify-content: space-between; /* Abstand zwischen den Elementen */
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     width: 100%;
 }
 
 .back-button {
+    position: absolute;
+    left: 10px;
     text-decoration: none;
     color: white;
     background-color: #658047;
@@ -30,56 +31,55 @@ header {
     border-radius: 5px;
 }
 
-/* Neuer CSS-Code für zentrierte Überschrift */
 header h1 {
-    flex-grow: 1; /* Ermöglicht der Überschrift, den verfügbaren Platz zu füllen */
-    text-align: center; /* Zentriert den Text */
-    color: #4293AD; /* Schriftfarbe */
-    text-shadow: 0px 2px 1px #4f4f4f; /* Schattenwurf */
+    color: #4293AD;
+    text-shadow: 0px 2px 1px #4f4f4f;
+    margin: 0;
 }
 
-.large-image img {
-    max-width: 90%;
-    height: auto;
+.gallery-container {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 80vh; /* Höhe des Containers */
 }
 
-.image-container {
-    display: flex; /* Verwende Flexbox für das Layout */
-    justify-content: center; /* Zentriere die Container */
-    align-items: flex-start; /* Setze die Vertikale Ausrichtung */
-    gap: 20px; /* Abstand zwischen dem großen Bild und den Thumbnails */
-}
-
-.thumbnail-gallery {
-    display: flex; /* Flexbox für die Thumbnails */
-    flex-direction: column; /* Stapele die Thumbnails untereinander */
-    gap: 10px; /* Abstand zwischen den Thumbnails */
-}
-
-.thumbnail {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
+.thumbnail-menu {
+    align-self: center;
+    width: 15%; /* 15% der Breite für das vertikale Scrollmenü */
+    height: 100%;
+    overflow-y: auto; /* Vertikales Scrollen aktivieren */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: füge einen Rahmen hinzu */
+    border-radius: 5px; /* Optional: abgerundete Ecken */
+    background-color: #e4bb90;
 }
 
 .thumbnail:hover {
     transform: scale(1.05);
 }
 
-.project-description {
-    margin-top: 20px;
+.thumbnail-menu img {
+    width: 100%; /* Bilder im Menü klein anzeigen */
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-/* Media Query für mobile Geräte */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column; /* Elemente untereinander anordnen */
-        align-items: center; /* Zentrieren der Elemente */
-    }
+.image-display {
+    width: 85%; /* 85% der Breite für das große Bild */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .thumbnail-gallery {
-        flex-direction: row; /* Stapele die Thumbnails wieder nebeneinander */
-        justify-content: center; /* Zentriere die Thumbnails */
-    }
+.image-display img {
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Bilder in ihrer nativen Skalierung anzeigen */
+    border-style: solid;
+    border-width: 10px;
 }

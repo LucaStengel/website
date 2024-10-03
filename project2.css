@@ -1,0 +1,111 @@
+body {
+    background-color: #FFE2C4;
+    margin: 10px; /* Korrigierter margin Wert */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    font-family: 'Geneva';
+    color: white; /* Schriftfarbe */
+    font-size: 25px; /* Schriftgröße */
+    font-weight: normal; /* Schriftstärke */
+    text-align: center; /* Textausrichtung */
+    letter-spacing: -1px;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Vertikale Ausrichtung */
+    justify-content: space-between; /* Abstand zwischen den Elementen */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.back-button {
+    text-decoration: none;
+    color: white;
+    background-color: #658047;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Neuer CSS-Code für zentrierte Überschrift */
+header h1 {
+    flex-grow: 1; /* Ermöglicht der Überschrift, den verfügbaren Platz zu füllen */
+    text-align: center; /* Zentriert den Text */
+    color: #4293AD; /* Schriftfarbe */
+    text-shadow: 0px 2px 1px #4f4f4f; /* Schattenwurf */
+}
+
+.image-container {
+    display: flex; /* Verwende Flexbox für das Layout */
+    justify-content: center; /* Zentriere die Container */
+    align-items: flex-start; /* Setze die Vertikale Ausrichtung */
+    gap: 20px; /* Abstand zwischen dem großen Bild und den Thumbnails */
+    width: 85%; /* 85% der Bildschirmbreite für das Bild */
+    height: 85%; /* Setze die Höhe des Containers auf 85% */
+}
+
+.large-image {
+    flex: 0 0 85%; /* 85% der Breite für das große Bild */
+}
+
+.large-image img {
+    width: 100%; /* Das Bild füllt den Container */
+    height: auto; /* Höhe anpassen */
+    border-style: solid;
+    border-width: 10px;
+}
+
+.thumbnail-gallery-container {
+    max-height: 100%; /* Setze eine maximale Höhe für den Container */
+    height: 100%; /* Höhe des Containers auf 100% setzen */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen */
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    border: 1px solid #ccc; /* Optional: füge einen Rahmen hinzu */
+    padding: 10px; /* Optional: füge etwas Padding hinzu */
+    border-radius: 5px; /* Optional: abgerundete Ecken */
+    display: flex; /* Flexbox für das Layout der Thumbnails */
+    justify-content: center; /* Zentriere die Thumbnails horizontal */
+    align-items: center; /* Zentriere die Thumbnails vertikal */
+}
+
+.thumbnail-gallery {
+    display: flex; /* Verwende Flexbox für die Thumbnails */
+    flex-direction: column; /* Stapele die Thumbnails in einer Spalte */
+    gap: 10px; /* Abstand zwischen den Thumbnails */
+    align-items: center; /* Zentriere die Thumbnails */
+}
+
+.thumbnail {
+    width: 100px; /* Breite der Thumbnails */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.project-description {
+    margin-top: 20px;
+}
+
+/* Media Query für mobile Geräte */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Elemente untereinander anordnen */
+        align-items: center; /* Zentrieren der Elemente */
+    }
+
+    .thumbnail-gallery-container {
+        width: 100%; /* Thumbnail Container voll ausnutzen */
+    }
+
+    .thumbnail-gallery {
+        flex-direction: row; /* Stapele die Thumbnails wieder nebeneinander */
+        justify-content: center; /* Zentriere die Thumbnails */
+    }
+}

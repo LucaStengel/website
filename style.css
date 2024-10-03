@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    font-family: 'Monaco';
+    font-family: 'Geneva';
     color: white; /* Schriftfarbe */
     font-size: 25px; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
