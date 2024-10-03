@@ -93,7 +93,7 @@ header h1 {
     }
 
     .image-display {
-        width: 100%; /* Bild nimmt 100% der Breite ein */
+        width: 90%; /* Bild nimmt 100% der Breite ein */
     }
 
     .thumbnail-menu {
