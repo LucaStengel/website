@@ -1,0 +1,65 @@
+body {
+    background-color: #FFE2C4;
+    margin: 10px; /* Korrigierter margin Wert */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    font-family: 'Monaco';
+    color: white; /* Schriftfarbe */
+    font-size: 25px; /* Schriftgröße */
+    font-weight: normal; /* Schriftstärke */
+    text-align: center; /* Textausrichtung */
+    letter-spacing: -1px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.back-button {
+    text-decoration: none;
+    align-self: left;
+    color: white;
+    background-color: #658047;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-left: 0%;
+    white-space: nowrap;
+    color: #4293AD; /* Schriftfarbe */
+    text-shadow: 0px 2px 1px #4f4f4f; /* Schattenwurf */
+}
+
+.large-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.project-description {
+    margin-top: 20px;
+}
