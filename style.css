@@ -17,6 +17,10 @@ header {
     padding: 20px;
 }
 
+h1 {
+    white-space: nowrap;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
@@ -29,8 +33,8 @@ header {
 
 .image-container {
     border: 4px solid #fff;
-    width: 320px; /* Vierecke gleichmäßig aufteilen mit Abstand */
-    height: 600px; /* Höhe der Vierecke */
+    width: 30%; /* Vierecke gleichmäßig aufteilen mit Abstand */
+    height: 250%; /* Höhe der Vierecke */
     overflow: hidden;
     box-sizing: border-box; /* Um Padding und Border in der Breite/Höhe zu berücksichtigen */
 }
