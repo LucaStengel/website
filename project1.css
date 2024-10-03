@@ -85,6 +85,22 @@ header h1 {
     border-width: 10px;
 }
 
+/* Für WebKit-basierte Browser (Chrome, Safari) */
+.thumbnail-menu::-webkit-scrollbar {
+    display: none; /* Scrollbalken ausblenden */
+}
+
+/* Für Firefox */
+.thumbnail-menu {
+    scrollbar-width: none; /* Scrollbalken ausblenden */
+}
+
+/* Optional: Damit das Layout beim Ausblenden des Scrollbalkens nicht verändert wird */
+.thumbnail-menu {
+    -ms-overflow-style: none; /* Für Internet Explorer und Edge */
+}
+
+
 /* Für Mobilgeräte */
 @media (max-width: 768px) {
     .gallery-container {
@@ -96,6 +112,7 @@ header h1 {
         width: 90%; /* 15% der Breite für das vertikale Scrollmenü */
         height: 10%;
         overflow-x: auto; /* Vertikales Scrollen aktivieren */
+        overflow-y: hidden;
         display: flex;
         flex-direction:row;
         align-items: center;
@@ -110,12 +127,13 @@ header h1 {
     }
     
     .thumbnail-menu img {
-        width: 100%; /* Bilder im Menü klein anzeigen */
-        margin-bottom: 10px;
+        height: 100%; /* Bilder im Menü klein anzeigen */
+        margin-right: 10px;
         cursor: pointer;
     }
     
     .image-display {
+        margin-top: 10px;
         width: 90%; /* 85% der Breite für das große Bild */
         display: flex;
         justify-content: center;
