@@ -15,39 +15,38 @@ body {
 }
 
 header {
+    flex: 1;
     width: 99%;
 }
 
 h1 {
     white-space: nowrap;
     color: #4293AD; /* Schriftfarbe */
-    text-shadow: 0px 2px 1px #658047; /* Schattenwurf */
+    text-shadow: 0px 2px 1px #4f4f4f; /* Schattenwurf */
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-    margin-top: 0%;
-    gap: 10px; /* Abstand zwischen den Bildern */
-    max-width: 1280px; /* Maximale Breite der Galerie für 4 Bilder */
+    display: flex;               /* Flexbox verwenden */
+    flex-wrap: wrap;            /* Umbruch aktivieren */
+    justify-content: space-around; /* Abstand zwischen den Elementen */
+    padding: 20px;              /* Innenabstand für die Galerie */
+    border-style: solid;
 }
-
 .image-container {
+    max-width: 30%;             /* Maximal 30% der Breite (3 in einer Zeile) */
+    margin: 10px;               /* Abstand zwischen den Containern */
+    text-align: center;          /* Zentrierte Überschrift und Bild */
+    overflow: hidden;            /* Überlaufende Inhalte verstecken */
     background-color: #4293AD;
-    border-style:solid;
-    width: 30%; /* Vierecke gleichmäßig aufteilen mit Abstand */
-    height: 180%; /* Höhe der Vierecke */
-    overflow: visible;
-    box-sizing: border-box; /* Um Padding und Border in der Breite/Höhe zu berücksichtigen */
-    text-align: center; /* Überschrift wird unter dem Bild zentriert */
-    color: #FFE2C4;
-    text-shadow: 0px 2px 1px #658047; /* Schattenwurf */
 }
-
 .image-container img {
     width: 100%;
-    height: 90%;
-    object-fit: cover; /* Bild skalieren, um den Container zu füllen */
+    height: 100%;
+    object-fit:cover; /* Bild skalieren, um den Container zu füllen */
+}
+.footer {
+    text-align: center; /* Text zentrieren */
+    padding: 10px 0; /* Abstand oben und unten */
+    margin-top: 20px; /* Abstand oben zum Inhalt */
+    color: #4293AD;
 }
