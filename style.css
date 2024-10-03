@@ -54,3 +54,13 @@ h1 {
     margin-top: 20px; /* Abstand oben zum Inhalt */
     color: #4293AD;
 }
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Elemente untereinander anordnen */
+        align-items: center; /* Zentrieren der Elemente */
+    }
+    
+    .image-container {
+        max-width: 100%; /* Maximale Breite 100% für mobile Geräte */
+    }
+}
