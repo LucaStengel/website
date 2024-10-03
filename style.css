@@ -1,24 +1,27 @@
 body {
-    background-color: #e8d6d6;
+    background-color: #FFE2C4;
     margin: 10px; /* Korrigierter margin Wert */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Monaco';
     color: white; /* Schriftfarbe */
     font-size: 25px; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
     text-align: center; /* Textausrichtung */
+    letter-spacing: -1px
 }
 
 header {
-    padding: 20px;
+    width: 99%;
 }
 
 h1 {
     white-space: nowrap;
+    color: #4293AD; /* Schriftfarbe */
+    text-shadow: 0px 2px 1px #658047; /* Schattenwurf */
 }
 
 .gallery {
@@ -26,21 +29,25 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
-    margin-top: 40px;
+    margin-top: 0%;
     gap: 10px; /* Abstand zwischen den Bildern */
     max-width: 1280px; /* Maximale Breite der Galerie für 4 Bilder */
 }
 
 .image-container {
-    border: 4px solid #fff;
+    background-color: #4293AD;
+    border-style:solid;
     width: 30%; /* Vierecke gleichmäßig aufteilen mit Abstand */
-    height: 250%; /* Höhe der Vierecke */
-    overflow: hidden;
+    height: 180%; /* Höhe der Vierecke */
+    overflow: visible;
     box-sizing: border-box; /* Um Padding und Border in der Breite/Höhe zu berücksichtigen */
+    text-align: center; /* Überschrift wird unter dem Bild zentriert */
+    color: #FFE2C4;
+    text-shadow: 0px 2px 1px #658047; /* Schattenwurf */
 }
 
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover; /* Bild skalieren, um den Container zu füllen */
 }
