@@ -11,42 +11,49 @@ body {
     font-size: 25px; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
     text-align: center; /* Textausrichtung */
-    letter-spacing: -1px
+    letter-spacing: -1px;
 }
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Vertikale Ausrichtung */
+    justify-content: space-between; /* Abstand zwischen den Elementen */
     margin-bottom: 20px;
     width: 100%;
 }
 
 .back-button {
     text-decoration: none;
-    align-self: left;
     color: white;
     background-color: #658047;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-h1 {
-    margin-left: 0%;
-    white-space: nowrap;
+/* Neuer CSS-Code für zentrierte Überschrift */
+header h1 {
+    flex-grow: 1; /* Ermöglicht der Überschrift, den verfügbaren Platz zu füllen */
+    text-align: center; /* Zentriert den Text */
     color: #4293AD; /* Schriftfarbe */
     text-shadow: 0px 2px 1px #4f4f4f; /* Schattenwurf */
 }
 
 .large-image img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
 }
 
+.image-container {
+    display: flex; /* Verwende Flexbox für das Layout */
+    justify-content: center; /* Zentriere die Container */
+    align-items: flex-start; /* Setze die Vertikale Ausrichtung */
+    gap: 20px; /* Abstand zwischen dem großen Bild und den Thumbnails */
+}
+
 .thumbnail-gallery {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
+    display: flex; /* Flexbox für die Thumbnails */
+    flex-direction: column; /* Stapele die Thumbnails untereinander */
+    gap: 10px; /* Abstand zwischen den Thumbnails */
 }
 
 .thumbnail {
@@ -62,4 +69,17 @@ h1 {
 
 .project-description {
     margin-top: 20px;
+}
+
+/* Media Query für mobile Geräte */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Elemente untereinander anordnen */
+        align-items: center; /* Zentrieren der Elemente */
+    }
+
+    .thumbnail-gallery {
+        flex-direction: row; /* Stapele die Thumbnails wieder nebeneinander */
+        justify-content: center; /* Zentriere die Thumbnails */
+    }
 }
