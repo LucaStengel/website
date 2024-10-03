@@ -100,11 +100,17 @@ header h1 {
     -ms-overflow-style: none; /* Für Internet Explorer und Edge */
 }
 
+.text-section{
+    width: 100%;
+    background-color: #543921;
+}
 
 /* Für Mobilgeräte */
 @media (max-width: 768px) {
     .gallery-container {
         flex-direction: column;
+        width: 100%;
+        height: 65vh; /* Höhe des Containers */
     }
     
     .thumbnail-menu {
