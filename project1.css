@@ -47,7 +47,7 @@ header h1 {
 
 .thumbnail-menu {
     align-self: center;
-    width: 15%; /* 15% der Breite für das vertikale Scrollmenü */
+    width: 10%; /* 15% der Breite für das vertikale Scrollmenü */
     height: 100%;
     overflow-y: auto; /* Vertikales Scrollen aktivieren */
     display: flex;
@@ -61,12 +61,14 @@ header h1 {
 
 .thumbnail:hover {
     transform: scale(1.05);
+    object-fit: contain; /* Bilder in ihrer nativen Skalierung anzeigen */
 }
 
 .thumbnail-menu img {
     width: 100%; /* Bilder im Menü klein anzeigen */
     margin-bottom: 10px;
     cursor: pointer;
+    object-fit: contain; /* Bilder in ihrer nativen Skalierung anzeigen */
 }
 
 .image-display {
@@ -98,11 +100,6 @@ header h1 {
 /* Optional: Damit das Layout beim Ausblenden des Scrollbalkens nicht verändert wird */
 .thumbnail-menu {
     -ms-overflow-style: none; /* Für Internet Explorer und Edge */
-}
-
-.text-section{
-    width: 100%;
-    background-color: #543921;
 }
 
 /* Für Mobilgeräte */
@@ -154,4 +151,13 @@ header h1 {
         border-style: solid;
         border-width: 10px;
     }
+}
+
+
+.text-section{
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    background-color: #543921;
+    margin-top: 40px;
 }
