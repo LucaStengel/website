@@ -85,30 +85,49 @@ header h1 {
     border-width: 10px;
 }
 
-
-/* Media Query für mobile Geräte */
+/* Für Mobilgeräte */
 @media (max-width: 768px) {
     .gallery-container {
-        flex-direction: column; /* Elemente untereinander anordnen */
-        align-items: center; /* Zentrieren der Elemente */
+        flex-direction: column;
     }
-
+    
+    .thumbnail-menu {
+        align-self: center;
+        width: 90%; /* 15% der Breite für das vertikale Scrollmenü */
+        height: 10%;
+        overflow-x: auto; /* Vertikales Scrollen aktivieren */
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc; /* Optional: füge einen Rahmen hinzu */
+        border-radius: 5px; /* Optional: abgerundete Ecken */
+        background-color: #e4bb90;
+    }
+    
+    .thumbnail:hover {
+        transform: scale(1.05);
+    }
+    
+    .thumbnail-menu img {
+        width: 100%; /* Bilder im Menü klein anzeigen */
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
     .image-display {
-        width: 90%; /* Bild nimmt 100% der Breite ein */
-    }
-
-    .thumbnail-gallery-container {
-        width: 100%; /* Thumbnail Container voll ausnutzen */
-    }
-
-    .thumbnail-gallery {
-        width: 100%; /* Menü nimmt die volle Breite ein */
-        height: auto;
-        flex-direction: row; /* Horizontal statt vertikal */
-        overflow-x: auto; /* Horizontales Scrollen */
-        overflow-y: hidden; /* Vertikales Scrollen deaktivieren */
+        width: 90%; /* 85% der Breite für das große Bild */
+        display: flex;
         justify-content: center;
-        padding: 5px;
+        align-self: center;
+    }
+    
+    .image-display img {
+        align-self: center;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Bilder in ihrer nativen Skalierung anzeigen */
+        border-style: solid;
+        border-width: 10px;
     }
 }
-
