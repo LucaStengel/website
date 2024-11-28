@@ -1,6 +1,6 @@
 /* Für größere Bildschirme wie Laptops */
 body {
-    background-color: #FFE2C4;
+    background-color: #3d3327;
     margin: 10px;
     height: 100vh;
     display: flex;
@@ -54,9 +54,9 @@ header h1 {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ccc; /* Optional: füge einen Rahmen hinzu */
+    border: 1px solid #553924; /* Optional: füge einen Rahmen hinzu */
     border-radius: 5px; /* Optional: abgerundete Ecken */
-    background-color: #e4bb90;
+    background-color: #3d3327;
 }
 
 .thumbnail:hover {
