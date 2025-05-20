@@ -31,8 +31,8 @@ header {
     align-items: baseline;
     justify-content: space-between;
 
-    background-color: rgba(0, 0, 0, 0.35); /* leicht transparent */
-    backdrop-filter: blur(4px);             /* konstanter Blur */
+    background-color: rgba(70, 70, 70, 0.35); /* leicht transparent */
+    backdrop-filter: blur(8px);             /* konstanter Blur */
     -webkit-backdrop-filter: blur(4px);
 
     z-index: 1000;
@@ -136,12 +136,20 @@ section.project {
 }
 
 @media (max-width: 800px) {
-    .gallery {
-        flex-direction: column; /* Elemente untereinander anordnen */
-        align-items: center; /* Zentrieren der Elemente */
-    }
-    
     .image-container {
-        max-width: 100%; /* Maximale Breite 100% für mobile Geräte */
+        flex-direction: column;  /* Bild und Text untereinander */
+        max-width: 100%;         /* volle Breite */
+    }
+
+    .image-wrapper {
+        max-width: 100%;         /* Bild volle Breite */
+        flex: none;              /* kein flex-grow */
+    }
+
+    .text-wrapper {
+        padding-left: 0;         /* kein Abstand links */
+        margin-top: 10px;        /* Abstand über dem Text */
+        flex: none;              /* kein flex-grow */
+        width: 100%;             /* volle Breite */
     }
 }
