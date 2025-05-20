@@ -1,40 +1,62 @@
-/* Für größere Bildschirme wie Laptops */
 body {
-    background-color: #b9b9b9;
+    background-color: #adacac;
+
     margin: 10px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
-    font-family: 'Geneva';
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: -1px;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: white; /* Schriftfarbe */
+    font-size: 25px; /* Schriftgröße */
+    font-weight: normal; /* Schriftstärke */
+    text-align: left; /* Textausrichtung */
+    letter-spacing: -1px
 }
 
 header {
-    width: 99%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.35); /* leicht transparent */
+    backdrop-filter: blur(4px);             /* konstanter Blur */
+    -webkit-backdrop-filter: blur(4px);
+
+    z-index: 1000;
 }
 
 h1 {
+    position: inherit;
+    top: 20%;
+    size: 100%;
     margin-top: 0px;
     white-space: nowrap;
-    color: #b6b6b6; /* Schriftfarbe */
+    color: #f2f2f2; /* Schriftfarbe */
 }
 
 h1 a {
-    color: inherit; /* übernimmt die Schriftfarbe vom Eltern-Element */
-    text-decoration: none; /* entfernt die Unterstreichung */
+    display: inline-block; /* wichtig für transform */
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 a:hover {
-    text-decoration: underline; /* optional: Unterstreichung beim Hover */
+    transform: scale(1.026); /* leicht vergrößern */
+    text-decoration: underline wavy;
 }
 
 .gallery-container {
-    margin-top: 30px;
+    margin-top: 8%;
     display: flex;
     width: 100%;
     height: 80vh; /* Höhe des Containers */

@@ -60,7 +60,7 @@ h1 a:hover {
 }
 
 .project {
-    display: flex;               /* Flexbox verwenden */
+    display:block;               /* Flexbox verwenden */
     flex-wrap: wrap;            /* Umbruch aktivieren */
     justify-content: space-around; /* Abstand zwischen den Elementen */
     padding: 20px;              /* Innenabstand für die Galerie */
@@ -74,29 +74,67 @@ section.project {
   margin-top: 7%; /* Platz für den Header schaffen */
 }
 
-.image-container {
-    max-width: 30%;             /* Maximal 30% der Breite (3 in einer Zeile) */
-    margin: 10px;               /* Abstand zwischen den Containern */
-    text-align: center;          /* Zentrierte Überschrift und Bild */
-    overflow: hidden;            /* Überlaufende Inhalte verstecken */
-    background-color: #619eb3;
-    border-style: solid;
-    border-color: #619eb3;
+.image-wrapper {
+    flex: 1;         /* Bild nimmt flexiblen Platz */
+    max-width: 40%;  /* max Breite Bild */
+    overflow: hidden;
 }
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* sanfter Übergang */
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.05); /* Bild wird 5% größer */
+}
+
+
+.text-wrapper {
+    flex: 1;          /* Text nimmt flexiblen Platz */
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top; /* Text vertikal zentrieren */
+    color: white;      /* Textfarbe je nach Design anpassen */
+}
+
+
+.image-container {
+    display: flex;
+    max-width: 100%;    /* damit es sich anpasst */
+    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+    border-style: none;
+}
+
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit:cover; /* Bild skalieren, um den Container zu füllen */
 }
+
 .end{
     flex: 1;
 }
+
 .footer {
+    color: #c5c5c5;
     text-align: center; /* Text zentrieren */
     padding: 10px 0; /* Abstand oben und unten */
     margin-top: 20px; /* Abstand oben zum Inhalt */
-    color: #4293AD;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
 }
+
+.footer a {
+    color: #c5c5c5;         /* gleiche Farbe wie der Footer-Text */
+    text-decoration: none;  /* keine Unterstreichung */
+}
+
 @media (max-width: 800px) {
     .gallery {
         flex-direction: column; /* Elemente untereinander anordnen */
