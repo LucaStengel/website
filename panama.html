@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiemsee</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="javascript" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Luca Stengel</a></h1>
+        <nav class="nav-links">
+            <a href="#link3">About Me</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2>Panama</h2>
+        <div class="gallery-grid">
+            <img src="assets/Panama/panama-223.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-225.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-238.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-287.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-293.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-297.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-326.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-334.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-344.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-35.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-356.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-360.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-100.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-118.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-127.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-148.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-150.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-166.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-17.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-170.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-178.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-181.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-186.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-197.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-215.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-221.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-364.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-365.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-430.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-432.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-446.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-451.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-463.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-506.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-51.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-513.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-521.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-526.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-537.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-59.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-71.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-82.jpg" class="vertical" alt="vertical">
+            <img src="assets/Panama/panama-85.jpg" class="horizontal" alt="horizontal">
+            <img src="assets/Panama/panama-97.jpg" class="horizontal" alt="horizontal">
+        </div>
+    </main>
+
+   <div id="lightbox" class="lightbox hidden">
+        <button id="close-lightbox" class="close-button">×</button>
+        <div class="lightbox-zone left-zone"></div>
+        <img id="lightbox-img" src="" alt="fullscreen image">
+        <div class="lightbox-zone right-zone"></div>
+    </div>
+
+    <script src="project.js"></script>
+
+     <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('expanded');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiemsee</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="javascript" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Luca Stengel</a></h1>
+        <nav class="nav-links">
+            <a href="#link3">About Me</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2>Chiemsee</h2>
+        <div class="gallery-grid">
+            <img src="assets/MicheFischen/BootAufSee_6.jpg" class="horizontal" alt="Horizontal">
+            <img src="assets/MicheFischen/Chiemsee-13.jpeg" class="vertical" alt="Horizontal">
+            <img src="assets/MicheFischen/Chiemsee-11.jpeg" class="horizontal" alt="Vertikal">
+            <img src="assets/MicheFischen/Chiemsee-17.jpeg" class="horizontal" alt="Vertikal">
+            <img src="assets/MicheFischen/Chiemsee-16.jpeg" class="vertical" alt="Horizontal">
+        </div>
+    </main>
+
+   <div id="lightbox" class="lightbox hidden">
+        <button id="close-lightbox" class="close-button">×</button>
+        <div class="lightbox-zone left-zone"></div>
+        <img id="lightbox-img" src="" alt="fullscreen image">
+        <div class="lightbox-zone right-zone"></div>
+    </div>
+
+    <script src="project.js"></script>
+
+     <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('expanded');
+        });
+    </script>
+</body>
+</html>

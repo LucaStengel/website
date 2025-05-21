@@ -189,14 +189,7 @@ header.expanded .nav-links {
   display: flex;
 }
 
-
-
 @media (max-width: 800px) {
-    .project {
-        padding: 10px;     /* Weniger Innenabstand */
-        margin-left: 0.5%; /* Weniger Außenabstand */
-        margin-right: 0.5%;
-    }
 
     .image-container {
         flex-direction: column;  /* Bild und Text untereinander */
@@ -212,6 +205,7 @@ header.expanded .nav-links {
     }
 
     .image-wrapper {
+        aspect-ratio: 16 / 9;
         max-width: 100%;         /* Bild volle Breite */
         flex: none;              /* kein flex-grow */
     }
@@ -221,5 +215,15 @@ header.expanded .nav-links {
         margin-top: 10px;        /* Abstand über dem Text */
         flex: none;              /* kein flex-grow */
         width: 100%;             /* volle Breite */
+    }
+
+    section.project {
+        margin-top: 3vh;  /* vorher 7vh, weniger Abstand nach oben */
+        padding: 10px;    /* ggf. padding reduzieren */
+    }
+
+    .project {
+        margin-left: 0.5%; /* kleinerer Rand links/rechts */
+        margin-right: 0.5%;
     }
 }
