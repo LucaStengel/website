@@ -137,10 +137,6 @@ section.project {
 
 @media (max-width: 800px) {
 
-    header {
-    height: 16%;
-    }
-
     .image-container {
         flex-direction: column;  /* Bild und Text untereinander */
         max-width: 100%;         /* volle Breite */
