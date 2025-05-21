@@ -40,7 +40,7 @@ header {
 }
 
 header.expanded {
-    height: 25vh; /* oder beliebig mehr Platz */
+    height: 12vh; /* oder beliebig mehr Platz */
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
@@ -185,11 +185,36 @@ body.lightbox-open {
     cursor: pointer;
 }
 
-
 .hamburger span {
     height: 3px;
     background-color: white;
     border-radius: 2px;
+}
+
+.nav-links {
+    position: relative;
+    top: 4vh;
+    left: 1vh;
+    display: none;           /* Standard: unsichtbar */
+    flex-direction: column;  /* Links untereinander */
+    gap: 1vh;               /* Abstand zwischen den Links */
+    margin-top: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline wavy;
+}
+
+/* Wenn header expanded ist, zeigen wir die Links */
+header.expanded .nav-links {
+  display: flex;
 }
 
 

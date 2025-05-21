@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Luca Stengel</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Luca Stengel</a></h1>
+        <nav class="nav-links">
+            <a href="#link3">About Me</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="end"></section>
+    
+    <div class="footer">
+    <p>KONTAKT :  <a href="mailto:luca.stengel@gmail.com">luca.stengel@gmail.com</a></p>
+    </div>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('expanded');
+        });
+    </script>
+
+</body>
+</html>

@@ -192,11 +192,6 @@ header.expanded .nav-links {
 
 
 @media (max-width: 800px) {
-    .project {
-        padding: 10px;     /* Weniger Innenabstand */
-        margin-left: 0.5%; /* Weniger Außenabstand */
-        margin-right: 0.5%;
-    }
 
     .image-container {
         flex-direction: column;  /* Bild und Text untereinander */
