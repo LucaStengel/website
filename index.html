@@ -11,8 +11,14 @@
 <body>
 
     <header>
-        <h1>Luca Stengel</h1>
+        <h1><a href="#">Luca Stengel</a></h1>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
 
     <section class="project">
         <div class="image-container">
@@ -48,5 +54,12 @@
     <div class="footer">
     <p>KONTAKT :  <a href="mailto:luca.stengel@gmail.com">luca.stengel@gmail.com</a></p>
     </div>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('expanded');
+        });
+    </script>
+
 </body>
 </html>

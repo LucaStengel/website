@@ -164,6 +164,25 @@ body.lightbox-open {
     right: 0;
 }
 
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    margin-left: auto; /* nach ganz rechts */
+    margin-right: 20px; /* etwas Abstand zum Rand */
+    padding: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
 
 @media (max-width: 768px) {
     .gallery-grid {
