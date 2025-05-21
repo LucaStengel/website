@@ -13,7 +13,7 @@ body {
     font-size: 100%; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
     text-align: left; /* Textausrichtung */
-    letter-spacing: -1px
+    letter-spacing: 0.02em
 }
 
 * {

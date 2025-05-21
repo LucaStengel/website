@@ -17,7 +17,7 @@ body {
     font-size: 100%; /* Schriftgröße */
     font-weight: normal; /* Schriftstärke */
     text-align: left; /* Textausrichtung */
-    letter-spacing: -1px
+    letter-spacing: 0.02em
 }
 
 header {
@@ -71,7 +71,7 @@ h1 a:hover {
 }
 
 section.project {
-  margin-top: 7%; /* Platz für den Header schaffen */
+  margin-top: 7vh; /* Platz für den Header schaffen */
 }
 
 .image-wrapper {
@@ -144,6 +144,14 @@ section.project {
     .image-container {
         flex-direction: column;  /* Bild und Text untereinander */
         max-width: 100%;         /* volle Breite */
+    }
+
+    .image-container .text-wrapper {
+        order: 1; /* zuerst */
+    }
+
+    .image-container .image-wrapper {
+        order: 2; /* danach */
     }
 
     .image-wrapper {
