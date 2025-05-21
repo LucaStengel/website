@@ -205,4 +205,10 @@ header.expanded .nav-links {
         flex: none;              /* kein flex-grow */
         width: 100%;             /* volle Breite */
     }
+
+    .about-text p {
+        font-size: 1.1em;
+        color: #b5b5b5;
+        line-height: 1.6;
+    }
 }
