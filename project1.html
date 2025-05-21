@@ -11,6 +11,11 @@
 <body>
     <header>
         <h1><a href="index.html">Luca Stengel</a></h1>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <main>
@@ -31,5 +36,11 @@
     </div>
 
     <script src="project.js"></script>
+    
+     <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('expanded');
+        });
+    </script>
 </body>
 </html>

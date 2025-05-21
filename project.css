@@ -26,7 +26,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8%;
+    height: 9%;
     padding: 0 20px;
     display: flex;
     align-items: baseline;
@@ -39,9 +39,17 @@ header {
     z-index: 1000;
 }
 
+header.expanded {
+    height: 25vh; /* oder beliebig mehr Platz */
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    transition: height 0.3s ease;
+}
+
 h1 {
     position: inherit;
-    top: 20%;
+    top: 2vh;
     size: 100%;
     margin-top: 0px;
     white-space: nowrap;
@@ -165,23 +173,24 @@ body.lightbox-open {
 }
 
 .hamburger {
+    position: absolute;
+    top: 3.4vh;
+    right: 3.2vh;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 24px;
     height: 18px;
     cursor: pointer;
-    margin-left: auto; /* nach ganz rechts */
-    margin-right: 20px; /* etwas Abstand zum Rand */
-    padding: 5px;
 }
+
 
 .hamburger span {
     height: 3px;
     background-color: white;
     border-radius: 2px;
 }
-
 
 
 @media (max-width: 768px) {
