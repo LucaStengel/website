@@ -205,10 +205,19 @@ header.expanded .nav-links {
     }
 
     .image-wrapper {
-        aspect-ratio: 16 / 9;
-        max-width: 100%;         /* Bild volle Breite */
-        flex: none;              /* kein flex-grow */
+        max-width: 100%;
+        flex: none;
+        height: auto;          /* ← wichtig */
+        overflow: hidden;
     }
+
+    .image-wrapper img {
+        width: 100%;
+        height: auto;          /* ← proportional skalieren */
+        display: block;        /* ← verhindert extra whitespace bei inline-elementen */
+        object-fit: cover;
+    }
+
 
     .text-wrapper {
         padding-left: 0;         /* kein Abstand links */
