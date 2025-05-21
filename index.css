@@ -190,7 +190,12 @@ header.expanded .nav-links {
 }
 
 @media (max-width: 800px) {
-
+    body {
+        background-size: auto 100%; /* Breite automatisch, Höhe 100% */
+        background-attachment: fixed;
+        background-position: top center;
+    }
+    
     .image-container {
         flex-direction: column;  /* Bild und Text untereinander */
         max-width: 100%;         /* volle Breite */
