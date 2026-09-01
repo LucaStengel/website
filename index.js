@@ -10,7 +10,10 @@
 const stage = document.getElementById('stage');
 const list = document.getElementById('project-index');
 const items = Array.from(document.querySelectorAll('.project-item'));
-const desktop = window.matchMedia('(min-width: 901px) and (hover: hover)');
+// Ob die Bühne überhaupt gezeigt wird, hängt an der Fenstergrösse — nicht
+// daran, ob das Gerät hovern kann. Sonst fiele jedes iPad ins Handy-Layout.
+const stageLayout = window.matchMedia('(min-width: 701px) and (min-height: 500px)');
+const canHover = window.matchMedia('(hover: hover)');
 
 const slots = [];
 let mounted = false;
@@ -45,6 +48,10 @@ function setActive(index) {
     // Muss vor dem Aufruf unten stehen: ist das Bild schon bereit, läuft der
     // Rückruf sofort und prüft gegen genau diesen Wert.
     active = index;
+
+    // Ohne Zeiger greift kein :hover — der angesteuerte Titel wird deshalb
+    // zusätzlich markiert
+    items.forEach((item, i) => item.classList.toggle('is-current', i === index));
 
     const entering = slots[index];
     if (entering) {
@@ -130,8 +137,22 @@ function mount() {
     stage.hidden = false;
     mounted = true;
 
-    // Titelbilder gleich dekodieren, damit beim ersten Hover nichts stockt
-    slots.forEach((slot) => { slot._ready = false; watchImage(slot); });
+    // Die Titelbilder stehen im HTML auf „lazy“, damit Handys sie gar nicht
+    // erst laden — dort werden sie nie gezeigt. Sobald die Bühne steht, werden
+    // sie hier sofort angefordert und dekodiert, damit der erste Hover direkt
+    // nach dem Laden nicht stockt.
+    slots.forEach((slot, i) => {
+        const img = slot.querySelector('img');
+        if (img) {
+            img.loading = 'eager';
+            if (i === 0) img.fetchPriority = 'high';
+        }
+        slot._ready = false;
+        watchImage(slot);
+    });
+
+    // Ohne Zeiger gibt es kein Hover — dann steht von Anfang an ein Bild da
+    if (!canHover.matches) setActive(0);
 }
 
 function unmount() {
@@ -154,44 +175,68 @@ function unmount() {
 }
 
 function sync() {
-    if (desktop.matches) mount();
+    if (stageLayout.matches) mount();
     else unmount();
 }
 
-// Hover / Tastaturfokus steuern, welches Bild aus dem Schwarz auftaucht.
-// Kurze Verzögerung beim Eintreten: fährt die Maus nur über die Liste hinweg,
-// fängt kein Bild an aufzutauchen — sonst flackert es beim Überstreichen.
+// ─── Bedienung ─────────────────────────────────────────────────────────────
+
+// Mit Zeiger: Hover, mit kurzer Verzögerung. Fährt die Maus nur über die
+// Liste hinweg, fängt kein Bild an aufzutauchen — sonst flackert es.
 const HOVER_INTENT = 40;
 let intentTimer;
 
-items.forEach((item, i) => {
-    item.addEventListener('pointerenter', () => {
-        clearTimeout(intentTimer);
-        if (mounted) intentTimer = setTimeout(() => setActive(i), HOVER_INTENT);
+if (canHover.matches) {
+    items.forEach((item, i) => {
+        item.addEventListener('pointerenter', () => {
+            clearTimeout(intentTimer);
+            if (mounted) intentTimer = setTimeout(() => setActive(i), HOVER_INTENT);
+        });
     });
+
+    // Abgemeldet wird erst beim Verlassen der ganzen Liste, nicht schon beim
+    // Verlassen eines einzelnen Titels. Sonst läge zwischen zwei Titeln immer
+    // ein „nichts aktiv“, und die Laufrichtung — sie ergibt sich aus dem
+    // Vergleich mit dem vorher aktiven Titel — wäre nicht mehr bestimmbar.
+    if (list) {
+        list.addEventListener('pointerleave', () => {
+            clearTimeout(intentTimer);
+            if (mounted) setActive(-1);
+        });
+    }
+}
+
+// Ohne Zeiger (iPad): der erste Fingertipp holt das Bild hervor, der zweite
+// auf denselben Titel öffnet das Projekt. Beim Laden steht das erste Projekt
+// schon auf der Bühne, damit die rechte Seite nicht leer wirkt.
+if (!canHover.matches) {
+    items.forEach((item, i) => {
+        const link = item.querySelector('.item-link');
+        if (!link) return;
+        link.addEventListener('click', (e) => {
+            if (mounted && active !== i) {
+                e.preventDefault();
+                setActive(i);
+            }
+        });
+    });
+}
+
+// Tastatur führt immer direkt, egal welches Eingabegerät
+items.forEach((item, i) => {
     item.addEventListener('focusin', () => {
         clearTimeout(intentTimer);
         if (mounted) setActive(i);
     });
 });
 
-// Abgemeldet wird erst beim Verlassen der ganzen Liste, nicht schon beim
-// Verlassen eines einzelnen Titels. Sonst läge zwischen zwei Titeln immer ein
-// „nichts aktiv“, und die Laufrichtung — sie ergibt sich aus dem Vergleich mit
-// dem vorher aktiven Titel — liesse sich nicht mehr bestimmen.
-const leaveList = () => {
-    clearTimeout(intentTimer);
-    if (mounted) setActive(-1);
-};
-
 if (list) {
-    list.addEventListener('pointerleave', leaveList);
     list.addEventListener('focusout', (e) => {
-        if (!list.contains(e.relatedTarget)) leaveList();
+        if (mounted && canHover.matches && !list.contains(e.relatedTarget)) setActive(-1);
     });
 }
 
 sync();
 
-if (desktop.addEventListener) desktop.addEventListener('change', sync);
-else desktop.addListener(sync); // ältere Safari-Versionen
+if (stageLayout.addEventListener) stageLayout.addEventListener('change', sync);
+else stageLayout.addListener(sync); // ältere Safari-Versionen

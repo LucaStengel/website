@@ -372,7 +372,7 @@ def generate_index(projects: list) -> None:
         items.append(
             f"""            <li class="project-item" data-index="{i}">
                 <figure class="item-media">
-                    {picture(cover, "(min-width: 1500px) 560px, (max-width: 900px) 100vw, 38vw", meta["title"], eager=True, priority=(i == 0))}
+                    {picture(cover, "(min-width: 1500px) 560px, 38vw", meta["title"])}
                 </figure>
                 <a class="item-link" href="{p['slug']}.html">
                     <span class="num">{i + 1:02d}</span>

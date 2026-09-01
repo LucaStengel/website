@@ -209,7 +209,7 @@ body.lightbox-open { overflow: hidden; }
 
 /* ─── Mobil ──────────────────────────────────────────────────── */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .project-intro { padding-top: calc(var(--header-h) + 40px); }
     .project-intro .lede { font-size: 0.94rem; }
 
