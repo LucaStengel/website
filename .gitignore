@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+
+# Originale bleiben lokal — ausgeliefert wird nur media/
+projects/
+
+# Alter Bildbestand der früheren Seite. Bleibt auf der Platte (optimize.py
+# holt sich das Portrait von dort), gehört aber nicht mehr ins Repo:
+# ausgeliefert wird ausschliesslich media/.
+assets/

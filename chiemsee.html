@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiemsee</title>
+    <title>Chiemsee — Luca Stengel</title>
+    <meta name="description" content="A lonely sunday morning at the Chiemsee.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="project.css">
-    <link rel="javascript" href="project.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1><a href="index.html">Luca Stengel</a></h1>
-        <nav class="nav-links">
-            <a href="#link3">About Me</a>
+<body class="project-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html">Luca Stengel</a>
+        <nav class="nav-links" id="nav">
+            <a href="index.html" class="is-current">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="mailto:info@lucastengel.com">Contact</a>
         </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
+    <div class="backdrop" aria-hidden="true">
+        <span class="wave wave-a1"></span>
+        <span class="wave wave-a2"></span>
+        <span class="wave wave-b1"></span>
+        <span class="wave wave-b2"></span>
+    </div>
 
     <main>
-        <h2>Chiemsee</h2>
-        <div class="gallery-grid">
-            <img src="assets/MicheFischen/BootAufSee_6.jpg" class="horizontal" alt="Horizontal">
-            <img src="assets/MicheFischen/Chiemsee-13.jpeg" class="vertical" alt="Horizontal">
-            <img src="assets/MicheFischen/Chiemsee-11.jpeg" class="horizontal" alt="Vertikal">
-            <img src="assets/MicheFischen/Chiemsee-17.jpeg" class="horizontal" alt="Vertikal">
-            <img src="assets/MicheFischen/Chiemsee-16.jpeg" class="vertical" alt="Horizontal">
+        <div class="project-intro">
+            <p class="eyebrow">03 / 04 &nbsp;·&nbsp; 16 photographs</p>
+            <h1>Chiemsee</h1>
+            <p class="lede">A lonely sunday morning at the Chiemsee.</p>
         </div>
+
+        <div class="gallery" id="gallery">
+            <div class="block full"><button class="tile" style="--aspect:1.3550;max-width:calc(88svh * 1.3550)" data-full="media/chiemsee/bootaufsee-6-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/bootaufsee-6-480.webp 480w, media/chiemsee/bootaufsee-6-960.webp 960w, media/chiemsee/bootaufsee-6-1440.webp 1440w, media/chiemsee/bootaufsee-6-2048.webp 2048w, media/chiemsee/bootaufsee-6-2560.webp 2560w, media/chiemsee/bootaufsee-6-3200.webp 3200w" sizes="(min-width: 1650px) 1360px, (max-width: 900px) 100vw, 90vw"><img src="media/chiemsee/bootaufsee-6-960.jpg" alt="Chiemsee" width="5637" height="4160" loading="eager" decoding="async"></picture></button></div>
+            <div class="block offset-right"><button class="tile" style="--aspect:1.5000;max-width:calc(84svh * 1.5000)" data-full="media/chiemsee/chiemsee-11-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-11-480.webp 480w, media/chiemsee/chiemsee-11-960.webp 960w, media/chiemsee/chiemsee-11-1440.webp 1440w, media/chiemsee/chiemsee-11-2048.webp 2048w, media/chiemsee/chiemsee-11-2560.webp 2560w, media/chiemsee/chiemsee-11-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/chiemsee/chiemsee-11-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block pair"><button class="tile" style="--aspect:0.6667;max-width:calc(76svh * 0.6667);flex-grow:0.6667" data-full="media/chiemsee/chiemsee-13-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-13-480.webp 320w, media/chiemsee/chiemsee-13-960.webp 640w, media/chiemsee/chiemsee-13-1440.webp 960w, media/chiemsee/chiemsee-13-2048.webp 1365w, media/chiemsee/chiemsee-13-2560.webp 1707w, media/chiemsee/chiemsee-13-3200.webp 2133w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-13-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button><button class="tile" style="--aspect:0.6667;max-width:calc(76svh * 0.6667);flex-grow:0.6667" data-full="media/chiemsee/chiemsee-16-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-16-480.webp 320w, media/chiemsee/chiemsee-16-960.webp 640w, media/chiemsee/chiemsee-16-1440.webp 960w, media/chiemsee/chiemsee-16-2048.webp 1365w, media/chiemsee/chiemsee-16-2560.webp 1707w, media/chiemsee/chiemsee-16-3200.webp 2133w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-16-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-left"><button class="tile" style="--aspect:1.6860;max-width:calc(84svh * 1.6860)" data-full="media/chiemsee/chiemsee-17-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-17-480.webp 480w, media/chiemsee/chiemsee-17-960.webp 960w, media/chiemsee/chiemsee-17-1440.webp 1440w, media/chiemsee/chiemsee-17-2048.webp 2048w, media/chiemsee/chiemsee-17-2560.webp 2560w, media/chiemsee/chiemsee-17-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/chiemsee/chiemsee-17-960.jpg" alt="Chiemsee" width="6240" height="3701" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-right narrow"><button class="tile" style="--aspect:0.6667;max-width:calc(84svh * 0.6667)" data-full="media/chiemsee/chiemsee-18-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-18-480.webp 320w, media/chiemsee/chiemsee-18-960.webp 640w, media/chiemsee/chiemsee-18-1440.webp 960w, media/chiemsee/chiemsee-18-2048.webp 1365w, media/chiemsee/chiemsee-18-2560.webp 1707w, media/chiemsee/chiemsee-18-3200.webp 2133w" sizes="(min-width: 1650px) 610px, (max-width: 900px) 100vw, 40vw"><img src="media/chiemsee/chiemsee-18-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block pair"><button class="tile" style="--aspect:1.5000;max-width:calc(76svh * 1.5000);flex-grow:1.5000" data-full="media/chiemsee/chiemsee-2-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-2-480.webp 480w, media/chiemsee/chiemsee-2-960.webp 960w, media/chiemsee/chiemsee-2-1440.webp 1440w, media/chiemsee/chiemsee-2-2048.webp 2048w, media/chiemsee/chiemsee-2-2560.webp 2560w, media/chiemsee/chiemsee-2-3200.webp 3200w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-2-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button><button class="tile" style="--aspect:1.5309;max-width:calc(76svh * 1.5309);flex-grow:1.5309" data-full="media/chiemsee/chiemsee-20-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-20-480.webp 480w, media/chiemsee/chiemsee-20-960.webp 960w, media/chiemsee/chiemsee-20-1440.webp 1440w, media/chiemsee/chiemsee-20-2048.webp 2048w, media/chiemsee/chiemsee-20-2560.webp 2560w, media/chiemsee/chiemsee-20-3200.webp 3200w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-20-960.jpg" alt="Chiemsee" width="6038" height="3944" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-left narrow"><button class="tile" style="--aspect:0.6667;max-width:calc(84svh * 0.6667)" data-full="media/chiemsee/chiemsee-21-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-21-480.webp 320w, media/chiemsee/chiemsee-21-960.webp 640w, media/chiemsee/chiemsee-21-1440.webp 960w, media/chiemsee/chiemsee-21-2048.webp 1365w, media/chiemsee/chiemsee-21-2560.webp 1707w, media/chiemsee/chiemsee-21-3200.webp 2133w" sizes="(min-width: 1650px) 610px, (max-width: 900px) 100vw, 40vw"><img src="media/chiemsee/chiemsee-21-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-right"><button class="tile" style="--aspect:1.5000;max-width:calc(84svh * 1.5000)" data-full="media/chiemsee/chiemsee-26-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-26-480.webp 480w, media/chiemsee/chiemsee-26-960.webp 960w, media/chiemsee/chiemsee-26-1440.webp 1440w, media/chiemsee/chiemsee-26-2048.webp 2048w, media/chiemsee/chiemsee-26-2560.webp 2560w, media/chiemsee/chiemsee-26-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/chiemsee/chiemsee-26-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-left narrow"><button class="tile" style="--aspect:0.6667;max-width:calc(84svh * 0.6667)" data-full="media/chiemsee/chiemsee-27-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-27-480.webp 320w, media/chiemsee/chiemsee-27-960.webp 640w, media/chiemsee/chiemsee-27-1440.webp 960w, media/chiemsee/chiemsee-27-2048.webp 1365w, media/chiemsee/chiemsee-27-2560.webp 1707w, media/chiemsee/chiemsee-27-3200.webp 2133w" sizes="(min-width: 1650px) 610px, (max-width: 900px) 100vw, 40vw"><img src="media/chiemsee/chiemsee-27-960.jpg" alt="Chiemsee" width="4044" height="6066" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-right"><button class="tile" style="--aspect:1.5000;max-width:calc(84svh * 1.5000)" data-full="media/chiemsee/chiemsee-28-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-28-480.webp 480w, media/chiemsee/chiemsee-28-960.webp 960w, media/chiemsee/chiemsee-28-1440.webp 1440w, media/chiemsee/chiemsee-28-2048.webp 2048w, media/chiemsee/chiemsee-28-2560.webp 2560w, media/chiemsee/chiemsee-28-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/chiemsee/chiemsee-28-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block pair"><button class="tile" style="--aspect:0.6667;max-width:calc(76svh * 0.6667);flex-grow:0.6667" data-full="media/chiemsee/chiemsee-29-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-29-480.webp 320w, media/chiemsee/chiemsee-29-960.webp 640w, media/chiemsee/chiemsee-29-1440.webp 960w, media/chiemsee/chiemsee-29-2048.webp 1365w, media/chiemsee/chiemsee-29-2560.webp 1707w, media/chiemsee/chiemsee-29-3200.webp 2133w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-29-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button><button class="tile" style="--aspect:0.6667;max-width:calc(76svh * 0.6667);flex-grow:0.6667" data-full="media/chiemsee/chiemsee-30-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-30-480.webp 320w, media/chiemsee/chiemsee-30-960.webp 640w, media/chiemsee/chiemsee-30-1440.webp 960w, media/chiemsee/chiemsee-30-2048.webp 1365w, media/chiemsee/chiemsee-30-2560.webp 1707w, media/chiemsee/chiemsee-30-3200.webp 2133w" sizes="(min-width: 1650px) 700px, (max-width: 900px) 100vw, 46vw"><img src="media/chiemsee/chiemsee-30-960.jpg" alt="Chiemsee" width="4160" height="6240" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block full"><button class="tile" style="--aspect:1.5000;max-width:calc(88svh * 1.5000)" data-full="media/chiemsee/chiemsee-5-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-5-480.webp 480w, media/chiemsee/chiemsee-5-960.webp 960w, media/chiemsee/chiemsee-5-1440.webp 1440w, media/chiemsee/chiemsee-5-2048.webp 2048w, media/chiemsee/chiemsee-5-2560.webp 2560w, media/chiemsee/chiemsee-5-3200.webp 3200w" sizes="(min-width: 1650px) 1360px, (max-width: 900px) 100vw, 90vw"><img src="media/chiemsee/chiemsee-5-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-left"><button class="tile" style="--aspect:1.5000;max-width:calc(84svh * 1.5000)" data-full="media/chiemsee/chiemsee-6-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/chiemsee/chiemsee-6-480.webp 480w, media/chiemsee/chiemsee-6-960.webp 960w, media/chiemsee/chiemsee-6-1440.webp 1440w, media/chiemsee/chiemsee-6-2048.webp 2048w, media/chiemsee/chiemsee-6-2560.webp 2560w, media/chiemsee/chiemsee-6-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/chiemsee/chiemsee-6-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="lazy" decoding="async"></picture></button></div>
+        </div>
+
+        <nav class="project-nav">
+            <a class="project-nav-link prev" href="steinplatte.html"><span class="label">Previous</span><span class="name">Steinplatte</span></a><a class="project-nav-link next" href="animals.html"><span class="label">Next</span><span class="name">Animals</span></a>
+        </nav>
     </main>
 
-   <div id="lightbox" class="lightbox hidden">
-        <button id="close-lightbox" class="close-button">×</button>
-        <div class="lightbox-zone left-zone"></div>
-        <img id="lightbox-img" src="" alt="fullscreen image">
-        <div class="lightbox-zone right-zone"></div>
+    <footer class="site-footer">
+        <a href="mailto:info@lucastengel.com">info@lucastengel.com</a>
+        <span>&copy; Luca Stengel</span>
+    </footer>
+
+    <div id="lightbox" class="lightbox" hidden>
+        <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&#8250;</button>
+        <div class="lb-counter" id="lb-counter"></div>
     </div>
 
     <script src="project.js"></script>
-
-     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('header').classList.toggle('expanded');
+    <script>
+        const burger = document.getElementById('hamburger');
+        burger.addEventListener('click', () => {
+            const open = document.body.classList.toggle('nav-open');
+            burger.setAttribute('aria-expanded', open);
         });
     </script>
 </body>

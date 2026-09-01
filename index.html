@@ -1,83 +1,118 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
     <title>Luca Stengel</title>
+    <meta name="description" content="Photography by Luca Stengel.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <header>
-        <h1><a href="#">Luca Stengel</a></h1>
-        <nav class="nav-links">
-            <a href="aboutme.html">About Me</a>
+<body class="index-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html">Luca Stengel</a>
+        <nav class="nav-links" id="nav">
+            <a href="index.html" class="is-current">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="mailto:info@lucastengel.com">Contact</a>
         </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
-
-
-    <section class="project">
-        <div class="image-container">
-            <div class="text-wrapper">
-                <h3>Panama</h3>
-                <p>A perfect getaway in february.</p>
-            </div>
-
-            <div class="image-wrapper">
-                <a href="panama.html">
-                    <img style="object-position: center center;" src="assets/Panama/panama-150.jpg" alt="Print">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="project">
-        <div class="image-container">
-            <div class="image-wrapper">
-            <a href="steinplatte.html">
-                <img style="object-position: center center;" src="assets/Steinplatte/Steinplatte.jpg" alt="Print">
-            </a>
-            </div>
-            <div class="text-wrapper">
-            <h3>Steinplatte</h3>
-            <p>Mountains in Mono.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="project">
-        <div class="image-container">
-            <div class="text-wrapper">
-                <h3>Chiemsee</h3>
-                <p>A lonely sunday morning at the chiemsee.</p>
-            </div>
-
-            <div class="image-wrapper">
-                <a href="chiemsee.html">
-                    <img style="object-position: center center;" src="assets/MicheFischen/Chiemsee-26.jpeg" alt="Print">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="end"></section>
-
-    <div class="footer">
-    <p>KONTAKT :  <a href="mailto:info@lucastengel.com">info@lucastengel.com</a></p>
+    <div class="backdrop" aria-hidden="true">
+        <span class="wave wave-a1"></span>
+        <span class="wave wave-a2"></span>
+        <span class="wave wave-b1"></span>
+        <span class="wave wave-b2"></span>
     </div>
 
+    <!-- Bühne für die Titelbilder — bewusst ausserhalb der Liste, damit sie
+         sich immer aufs Fenster bezieht. index.js hängt die Bilder hier ein. -->
+    <div class="stage" id="stage" aria-hidden="true" hidden></div>
+
+    <main class="index" id="index">
+        <div class="index-intro">
+            <h1>Luca Stengel</h1>
+            <p>Photography</p>
+        </div>
+
+        <ol class="project-index" id="project-index">
+            <li class="project-item" data-index="0">
+                <figure class="item-media">
+                    <picture><source type="image/webp" srcset="media/panama/panama-150-480.webp 480w, media/panama/panama-150-960.webp 960w, media/panama/panama-150-1440.webp 1440w, media/panama/panama-150-2048.webp 2048w, media/panama/panama-150-2560.webp 2560w, media/panama/panama-150-3200.webp 3200w" sizes="(min-width: 1500px) 560px, (max-width: 900px) 100vw, 38vw"><img src="media/panama/panama-150-960.jpg" alt="Panama" width="6240" height="4160" loading="eager" decoding="async" fetchpriority="high"></picture>
+                </figure>
+                <a class="item-link" href="panama.html">
+                    <span class="num">01</span>
+                    <span class="title">Panama</span>
+                    <span class="year"></span>
+                </a>
+                <div class="item-blurb">
+                    <p>A perfect getaway in february.</p>
+                    <p class="detail">44 photographs</p>
+                </div>
+            </li>
+            <li class="project-item" data-index="1">
+                <figure class="item-media">
+                    <picture><source type="image/webp" srcset="media/steinplatte/steinplatte-480.webp 480w, media/steinplatte/steinplatte-960.webp 960w, media/steinplatte/steinplatte-1440.webp 1440w, media/steinplatte/steinplatte-2048.webp 2048w, media/steinplatte/steinplatte-2560.webp 2560w, media/steinplatte/steinplatte-3200.webp 3200w" sizes="(min-width: 1500px) 560px, (max-width: 900px) 100vw, 38vw"><img src="media/steinplatte/steinplatte-960.jpg" alt="Steinplatte" width="6270" height="3510" loading="eager" decoding="async"></picture>
+                </figure>
+                <a class="item-link" href="steinplatte.html">
+                    <span class="num">02</span>
+                    <span class="title">Steinplatte</span>
+                    <span class="year"></span>
+                </a>
+                <div class="item-blurb">
+                    <p>Mountains in Mono.</p>
+                    <p class="detail">4 photographs</p>
+                </div>
+            </li>
+            <li class="project-item" data-index="2">
+                <figure class="item-media">
+                    <picture><source type="image/webp" srcset="media/chiemsee/chiemsee-26-480.webp 480w, media/chiemsee/chiemsee-26-960.webp 960w, media/chiemsee/chiemsee-26-1440.webp 1440w, media/chiemsee/chiemsee-26-2048.webp 2048w, media/chiemsee/chiemsee-26-2560.webp 2560w, media/chiemsee/chiemsee-26-3200.webp 3200w" sizes="(min-width: 1500px) 560px, (max-width: 900px) 100vw, 38vw"><img src="media/chiemsee/chiemsee-26-960.jpg" alt="Chiemsee" width="6240" height="4160" loading="eager" decoding="async"></picture>
+                </figure>
+                <a class="item-link" href="chiemsee.html">
+                    <span class="num">03</span>
+                    <span class="title">Chiemsee</span>
+                    <span class="year"></span>
+                </a>
+                <div class="item-blurb">
+                    <p>A lonely sunday morning at the Chiemsee.</p>
+                    <p class="detail">16 photographs</p>
+                </div>
+            </li>
+            <li class="project-item" data-index="3">
+                <figure class="item-media">
+                    <picture><source type="image/webp" srcset="media/animals/dsc02950-pp-480.webp 480w, media/animals/dsc02950-pp-960.webp 960w, media/animals/dsc02950-pp-1440.webp 1440w, media/animals/dsc02950-pp-2048.webp 2048w, media/animals/dsc02950-pp-2560.webp 2560w, media/animals/dsc02950-pp-3200.webp 3200w" sizes="(min-width: 1500px) 560px, (max-width: 900px) 100vw, 38vw"><img src="media/animals/dsc02950-pp-960.jpg" alt="Animals" width="8244" height="5207" loading="eager" decoding="async"></picture>
+                </figure>
+                <a class="item-link" href="animals.html">
+                    <span class="num">04</span>
+                    <span class="title">Animals</span>
+                    <span class="year"></span>
+                </a>
+                <div class="item-blurb">
+                    <p></p>
+                    <p class="detail">11 photographs</p>
+                </div>
+            </li>
+        </ol>
+    </main>
+
+    <footer class="site-footer">
+        <a href="mailto:info@lucastengel.com">info@lucastengel.com</a>
+        <span>&copy; Luca Stengel</span>
+    </footer>
+
+    <script src="index.js"></script>
     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('header').classList.toggle('expanded');
+        const burger = document.getElementById('hamburger');
+        burger.addEventListener('click', () => {
+            const open = document.body.classList.toggle('nav-open');
+            burger.setAttribute('aria-expanded', open);
         });
     </script>
-
 </body>
 </html>

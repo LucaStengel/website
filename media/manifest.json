@@ -1,0 +1,3037 @@
+{
+ "Animals": {
+  "DSC02950_pp.jpg": {
+   "stem": "dsc02950-pp",
+   "dir": "media/animals",
+   "width": 8244,
+   "height": 5207,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 303,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 606,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 910,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1294,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1617,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2021,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC02950_pp.jpg"
+  },
+  "DSC02997_pp.jpg": {
+   "stem": "dsc02997-pp",
+   "dir": "media/animals",
+   "width": 11308,
+   "height": 15086,
+   "sizes": [
+    {
+     "w": 360,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 720,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 1079,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1535,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1919,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2399,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC02997_pp.jpg"
+  },
+  "DSC02999_pp.jpg": {
+   "stem": "dsc02999-pp",
+   "dir": "media/animals",
+   "width": 10724,
+   "height": 11086,
+   "sizes": [
+    {
+     "w": 464,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 929,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 1393,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1981,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 2476,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 3096,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC02999_pp.jpg"
+  },
+  "DSC03012_pp.jpg": {
+   "stem": "dsc03012-pp",
+   "dir": "media/animals",
+   "width": 10497,
+   "height": 7693,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 352,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 704,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1055,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1501,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1876,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2345,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03012_pp.jpg"
+  },
+  "DSC03031_pp.jpg": {
+   "stem": "dsc03031-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 7931,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 351,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 702,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1053,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1498,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1873,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2341,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03031_pp.jpg"
+  },
+  "DSC03033_pp.jpg": {
+   "stem": "dsc03033-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 8842,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 391,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 783,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1174,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1670,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 2088,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2610,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03033_pp.jpg"
+  },
+  "DSC03055_pp.jpg": {
+   "stem": "dsc03055-pp",
+   "dir": "media/animals",
+   "width": 9404,
+   "height": 8842,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 451,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 903,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1354,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1926,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 2407,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 3009,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03055_pp.jpg"
+  },
+  "DSC03056_pp.jpg": {
+   "stem": "dsc03056-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 8224,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 364,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 728,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1092,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1553,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1942,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2427,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03056_pp.jpg"
+  },
+  "DSC03057_pp.jpg": {
+   "stem": "dsc03057-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 8842,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 391,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 783,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1174,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1670,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 2088,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2610,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03057_pp.jpg"
+  },
+  "DSC03069_pp.jpg": {
+   "stem": "dsc03069-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 8842,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 391,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 783,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1174,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1670,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 2088,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2610,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03069_pp.jpg"
+  },
+  "DSC03074_pp.jpg": {
+   "stem": "dsc03074-pp",
+   "dir": "media/animals",
+   "width": 10842,
+   "height": 8842,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 391,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 783,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1174,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1670,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 2088,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2610,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Animals/DSC03074_pp.jpg"
+  }
+ },
+ "Chiemsee": {
+  "BootAufSee_6.jpg": {
+   "stem": "bootaufsee-6",
+   "dir": "media/chiemsee",
+   "width": 5637,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 354,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 708,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1063,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1511,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1889,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2362,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/BootAufSee_6.jpg"
+  },
+  "Chiemsee-11.jpeg": {
+   "stem": "chiemsee-11",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-11.jpeg"
+  },
+  "Chiemsee-13.jpeg": {
+   "stem": "chiemsee-13",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-13.jpeg"
+  },
+  "Chiemsee-16.jpeg": {
+   "stem": "chiemsee-16",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-16.jpeg"
+  },
+  "Chiemsee-17.jpeg": {
+   "stem": "chiemsee-17",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 3701,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 285,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 569,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 854,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1215,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1518,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 1898,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-17.jpeg"
+  },
+  "Chiemsee-18.jpeg": {
+   "stem": "chiemsee-18",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-18.jpeg"
+  },
+  "Chiemsee-2.jpeg": {
+   "stem": "chiemsee-2",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-2.jpeg"
+  },
+  "Chiemsee-20.jpeg": {
+   "stem": "chiemsee-20",
+   "dir": "media/chiemsee",
+   "width": 6038,
+   "height": 3944,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 314,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 627,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 941,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1338,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1672,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2090,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-20.jpeg"
+  },
+  "Chiemsee-21.jpeg": {
+   "stem": "chiemsee-21",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-21.jpeg"
+  },
+  "Chiemsee-26.jpeg": {
+   "stem": "chiemsee-26",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-26.jpeg"
+  },
+  "Chiemsee-27.jpeg": {
+   "stem": "chiemsee-27",
+   "dir": "media/chiemsee",
+   "width": 4044,
+   "height": 6066,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-27.jpeg"
+  },
+  "Chiemsee-28.jpeg": {
+   "stem": "chiemsee-28",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-28.jpeg"
+  },
+  "Chiemsee-29.jpeg": {
+   "stem": "chiemsee-29",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-29.jpeg"
+  },
+  "Chiemsee-30.jpeg": {
+   "stem": "chiemsee-30",
+   "dir": "media/chiemsee",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-30.jpeg"
+  },
+  "Chiemsee-5.jpeg": {
+   "stem": "chiemsee-5",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-5.jpeg"
+  },
+  "Chiemsee-6.jpeg": {
+   "stem": "chiemsee-6",
+   "dir": "media/chiemsee",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Chiemsee/Chiemsee-6.jpeg"
+  }
+ },
+ "Panama": {
+  "panama-100.jpg": {
+   "stem": "panama-100",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-100.jpg"
+  },
+  "panama-118.jpg": {
+   "stem": "panama-118",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-118.jpg"
+  },
+  "panama-127.jpg": {
+   "stem": "panama-127",
+   "dir": "media/panama",
+   "width": 5214,
+   "height": 1440,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 133,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 265,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 398,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 566,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 884,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-127.jpg"
+  },
+  "panama-148.jpg": {
+   "stem": "panama-148",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-148.jpg"
+  },
+  "panama-150.jpg": {
+   "stem": "panama-150",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-150.jpg"
+  },
+  "panama-166.jpg": {
+   "stem": "panama-166",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-166.jpg"
+  },
+  "panama-17.jpg": {
+   "stem": "panama-17",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-17.jpg"
+  },
+  "panama-170.jpg": {
+   "stem": "panama-170",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-170.jpg"
+  },
+  "panama-178.jpg": {
+   "stem": "panama-178",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-178.jpg"
+  },
+  "panama-181.jpg": {
+   "stem": "panama-181",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-181.jpg"
+  },
+  "panama-186.jpg": {
+   "stem": "panama-186",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-186.jpg"
+  },
+  "panama-197.jpg": {
+   "stem": "panama-197",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-197.jpg"
+  },
+  "panama-215.jpg": {
+   "stem": "panama-215",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-215.jpg"
+  },
+  "panama-221.jpg": {
+   "stem": "panama-221",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-221.jpg"
+  },
+  "panama-223.jpg": {
+   "stem": "panama-223",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-223.jpg"
+  },
+  "panama-225.jpg": {
+   "stem": "panama-225",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-225.jpg"
+  },
+  "panama-238.jpg": {
+   "stem": "panama-238",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-238.jpg"
+  },
+  "panama-287.jpg": {
+   "stem": "panama-287",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-287.jpg"
+  },
+  "panama-293.jpg": {
+   "stem": "panama-293",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-293.jpg"
+  },
+  "panama-297.jpg": {
+   "stem": "panama-297",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-297.jpg"
+  },
+  "panama-326.jpg": {
+   "stem": "panama-326",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-326.jpg"
+  },
+  "panama-334.jpg": {
+   "stem": "panama-334",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-334.jpg"
+  },
+  "panama-344.jpg": {
+   "stem": "panama-344",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-344.jpg"
+  },
+  "panama-35.jpg": {
+   "stem": "panama-35",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-35.jpg"
+  },
+  "panama-356.jpg": {
+   "stem": "panama-356",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-356.jpg"
+  },
+  "panama-360.jpg": {
+   "stem": "panama-360",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-360.jpg"
+  },
+  "panama-364.jpg": {
+   "stem": "panama-364",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-364.jpg"
+  },
+  "panama-365.jpg": {
+   "stem": "panama-365",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-365.jpg"
+  },
+  "panama-430.jpg": {
+   "stem": "panama-430",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-430.jpg"
+  },
+  "panama-432.jpg": {
+   "stem": "panama-432",
+   "dir": "media/panama",
+   "width": 3211,
+   "height": 4817,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1706,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-432.jpg"
+  },
+  "panama-446.jpg": {
+   "stem": "panama-446",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-446.jpg"
+  },
+  "panama-451.jpg": {
+   "stem": "panama-451",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-451.jpg"
+  },
+  "panama-463.jpg": {
+   "stem": "panama-463",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-463.jpg"
+  },
+  "panama-506.jpg": {
+   "stem": "panama-506",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-506.jpg"
+  },
+  "panama-51.jpg": {
+   "stem": "panama-51",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-51.jpg"
+  },
+  "panama-513.jpg": {
+   "stem": "panama-513",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-513.jpg"
+  },
+  "panama-521.jpg": {
+   "stem": "panama-521",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-521.jpg"
+  },
+  "panama-526.jpg": {
+   "stem": "panama-526",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-526.jpg"
+  },
+  "panama-537.jpg": {
+   "stem": "panama-537",
+   "dir": "media/panama",
+   "width": 5646,
+   "height": 3764,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-537.jpg"
+  },
+  "panama-59.jpg": {
+   "stem": "panama-59",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-59.jpg"
+  },
+  "panama-71.jpg": {
+   "stem": "panama-71",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-71.jpg"
+  },
+  "panama-82.jpg": {
+   "stem": "panama-82",
+   "dir": "media/panama",
+   "width": 4160,
+   "height": 6240,
+   "sizes": [
+    {
+     "w": 320,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 640,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 960,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1365,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1707,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2133,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-82.jpg"
+  },
+  "panama-85.jpg": {
+   "stem": "panama-85",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-85.jpg"
+  },
+  "panama-97.jpg": {
+   "stem": "panama-97",
+   "dir": "media/panama",
+   "width": 6240,
+   "height": 4160,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 320,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 640,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 960,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1365,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1707,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2133,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Panama/panama-97.jpg"
+  }
+ },
+ "Steinplatte": {
+  "Bäume.jpg": {
+   "stem": "baeume",
+   "dir": "media/steinplatte",
+   "width": 7362,
+   "height": 5743,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 374,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 749,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 1123,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1598,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1997,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 2496,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Steinplatte/Bäume.jpg"
+  },
+  "Gipfelkreuz.jpg": {
+   "stem": "gipfelkreuz",
+   "dir": "media/steinplatte",
+   "width": 7249,
+   "height": 4032,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 267,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 534,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 801,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1139,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1424,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 1780,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Steinplatte/Gipfelkreuz.jpg"
+  },
+  "Hang.jpg": {
+   "stem": "hang",
+   "dir": "media/steinplatte",
+   "width": 5386,
+   "height": 7466,
+   "sizes": [
+    {
+     "w": 346,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 693,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 1039,
+     "h": 1440,
+     "long": 1440
+    },
+    {
+     "w": 1477,
+     "h": 2048,
+     "long": 2048
+    },
+    {
+     "w": 1847,
+     "h": 2560,
+     "long": 2560
+    },
+    {
+     "w": 2308,
+     "h": 3200,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Steinplatte/Hang.jpg"
+  },
+  "Steinplatte.jpg": {
+   "stem": "steinplatte",
+   "dir": "media/steinplatte",
+   "width": 6270,
+   "height": 3510,
+   "sizes": [
+    {
+     "w": 480,
+     "h": 269,
+     "long": 480
+    },
+    {
+     "w": 960,
+     "h": 537,
+     "long": 960
+    },
+    {
+     "w": 1440,
+     "h": 806,
+     "long": 1440
+    },
+    {
+     "w": 2048,
+     "h": 1146,
+     "long": 2048
+    },
+    {
+     "w": 2560,
+     "h": 1433,
+     "long": 2560
+    },
+    {
+     "w": 3200,
+     "h": 1791,
+     "long": 3200
+    }
+   ],
+   "fallback_long": 960,
+   "source": "projects/Steinplatte/Steinplatte.jpg"
+  }
+ },
+ "assets": {
+  "luca.jpg": {
+   "stem": "portrait",
+   "dir": "media/site",
+   "width": 1003,
+   "height": 1339,
+   "sizes": [
+    {
+     "w": 360,
+     "h": 480,
+     "long": 480
+    },
+    {
+     "w": 719,
+     "h": 960,
+     "long": 960
+    },
+    {
+     "w": 1003,
+     "h": 1339,
+     "long": 1339
+    }
+   ],
+   "fallback_long": 960,
+   "source": "assets/AboutMe/luca.jpg"
+  }
+ }
+}

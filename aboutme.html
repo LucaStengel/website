@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Luca Stengel</title>
+    <meta name="description" content="Luca Stengel — photographer, camera assistant and engineering student based in Munich.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="aboutme.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
-    <title>Luca Stengel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1><a href="index.html">Luca Stengel</a></h1>
-        <nav class="nav-links">
-            <a href="#link3">About Me</a>
+<body class="about-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html">Luca Stengel</a>
+        <nav class="nav-links" id="nav">
+            <a href="index.html">Work</a>
+            <a href="aboutme.html" class="is-current">About</a>
+            <a href="mailto:info@lucastengel.com">Contact</a>
         </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
-    <section class="about-me">
-        <div class="about-container">
-            <div class="about-image">
-                <img style="object-position: center center;" src="assets/AboutMe/luca.jpg" alt="Luca Stengel">
-            </div>
-            <div class="about-text">
-                <h2>About me</h2>
+    <div class="backdrop" aria-hidden="true">
+        <span class="wave wave-a1"></span>
+        <span class="wave wave-a2"></span>
+        <span class="wave wave-b1"></span>
+        <span class="wave wave-b2"></span>
+    </div>
+
+    <main class="about">
+        <figure class="portrait">
+            <picture>
+                <source type="image/webp"
+                        srcset="media/site/portrait-480.webp 360w, media/site/portrait-960.webp 719w, media/site/portrait-1339.webp 1003w"
+                        sizes="(max-width: 900px) 100vw, 38vw">
+                <img src="media/site/portrait-960.jpg" alt="Luca Stengel" width="1003" height="1339" decoding="async">
+            </picture>
+        </figure>
+
+        <div class="about-text">
+            <p class="eyebrow">About</p>
+            <h1>Luca Stengel</h1>
+
             <p>
-                I'm Luca — passionate about photography and technology. 
+                I'm Luca — passionate about photography and technology.
             </p>
             <p>
-                I've worked as a Camera Assistant and Key Grip on productions ranging from small indie films 
-                to major projects. You can find more details on my Crew United profile.
+                I've worked as a Camera Assistant and Key Grip on productions ranging from small
+                indie films to major projects. You can find more details on my Crew United profile.
             </p>
             <p>
-                I'm currently studying Electrical Engineering at Hochschule München and 
-                working at ARRI in the Image Science department. 
-                Prior to that, I gained hands-on experience in the Optics department.
+                I'm currently studying Electrical Engineering at Hochschule München and working at
+                ARRI in the Image Science department. Prior to that, I gained hands-on experience
+                in the Optics department.
             </p>
             <p>
                 I also have experience as a projectionist at the "Cinema Theater" in Munich.
             </p>
 
-            </div>
+            <a class="contact-link" href="mailto:info@lucastengel.com">
+                <span class="label">Get in touch</span>
+                <span class="name">info@lucastengel.com</span>
+            </a>
         </div>
-    </section>
+    </main>
 
-
-    <section class="end"></section>
-    
-    <div class="footer">
-    <p>KONTAKT :  <a href="mailto:info@lucastengel.com">info@lucastengel.com</a></p>
-    </div>
+    <footer class="site-footer">
+        <a href="mailto:info@lucastengel.com">info@lucastengel.com</a>
+        <span>&copy; Luca Stengel</span>
+    </footer>
 
     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('header').classList.toggle('expanded');
+        const burger = document.getElementById('hamburger');
+        burger.addEventListener('click', () => {
+            const open = document.body.classList.toggle('nav-open');
+            burger.setAttribute('aria-expanded', open);
         });
     </script>
-
 </body>
 </html>

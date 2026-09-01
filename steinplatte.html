@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steinplatte</title>
+    <title>Steinplatte — Luca Stengel</title>
+    <meta name="description" content="Mountains in Mono.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="project.css">
-    <link rel="javascript" href="project.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1><a href="index.html">Luca Stengel</a></h1>
-        <nav class="nav-links">
-            <a href="#link3">About Me</a>
+<body class="project-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html">Luca Stengel</a>
+        <nav class="nav-links" id="nav">
+            <a href="index.html" class="is-current">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="mailto:info@lucastengel.com">Contact</a>
         </nav>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </header>
+    <div class="backdrop" aria-hidden="true">
+        <span class="wave wave-a1"></span>
+        <span class="wave wave-a2"></span>
+        <span class="wave wave-b1"></span>
+        <span class="wave wave-b2"></span>
+    </div>
 
     <main>
-        <h2>Steinplatte</h2>
-        <div class="gallery-grid">
-            <img src="assets/Steinplatte/Bäume.jpg" class="horizontal" alt="horizontal">
-            <img src="assets/Steinplatte/Hang.jpg" class="vertical" alt="vertical">
-            <img src="assets/Steinplatte/Steinplatte.jpg" class="horizontal" alt="horizontal">
-            <img src="assets/Steinplatte/Gipfelkreuz.jpg" class="horizontal" alt="horizontal">
+        <div class="project-intro">
+            <p class="eyebrow">02 / 04 &nbsp;·&nbsp; 4 photographs</p>
+            <h1>Steinplatte</h1>
+            <p class="lede">Mountains in Mono.</p>
         </div>
+
+        <div class="gallery" id="gallery">
+            <div class="block full"><button class="tile" style="--aspect:1.2819;max-width:calc(88svh * 1.2819)" data-full="media/steinplatte/baeume-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/steinplatte/baeume-480.webp 480w, media/steinplatte/baeume-960.webp 960w, media/steinplatte/baeume-1440.webp 1440w, media/steinplatte/baeume-2048.webp 2048w, media/steinplatte/baeume-2560.webp 2560w, media/steinplatte/baeume-3200.webp 3200w" sizes="(min-width: 1650px) 1360px, (max-width: 900px) 100vw, 90vw"><img src="media/steinplatte/baeume-960.jpg" alt="Steinplatte" width="7362" height="5743" loading="eager" decoding="async"></picture></button></div>
+            <div class="block offset-right"><button class="tile" style="--aspect:1.7979;max-width:calc(84svh * 1.7979)" data-full="media/steinplatte/gipfelkreuz-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/steinplatte/gipfelkreuz-480.webp 480w, media/steinplatte/gipfelkreuz-960.webp 960w, media/steinplatte/gipfelkreuz-1440.webp 1440w, media/steinplatte/gipfelkreuz-2048.webp 2048w, media/steinplatte/gipfelkreuz-2560.webp 2560w, media/steinplatte/gipfelkreuz-3200.webp 3200w" sizes="(min-width: 1650px) 880px, (max-width: 900px) 100vw, 58vw"><img src="media/steinplatte/gipfelkreuz-960.jpg" alt="Steinplatte" width="7249" height="4032" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block offset-left narrow"><button class="tile" style="--aspect:0.7214;max-width:calc(84svh * 0.7214)" data-full="media/steinplatte/hang-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/steinplatte/hang-480.webp 346w, media/steinplatte/hang-960.webp 693w, media/steinplatte/hang-1440.webp 1039w, media/steinplatte/hang-2048.webp 1477w, media/steinplatte/hang-2560.webp 1847w, media/steinplatte/hang-3200.webp 2308w" sizes="(min-width: 1650px) 610px, (max-width: 900px) 100vw, 40vw"><img src="media/steinplatte/hang-960.jpg" alt="Steinplatte" width="5386" height="7466" loading="lazy" decoding="async"></picture></button></div>
+            <div class="block full"><button class="tile" style="--aspect:1.7863;max-width:calc(88svh * 1.7863)" data-full="media/steinplatte/steinplatte-3200.webp" aria-label="Bild öffnen"><picture><source type="image/webp" srcset="media/steinplatte/steinplatte-480.webp 480w, media/steinplatte/steinplatte-960.webp 960w, media/steinplatte/steinplatte-1440.webp 1440w, media/steinplatte/steinplatte-2048.webp 2048w, media/steinplatte/steinplatte-2560.webp 2560w, media/steinplatte/steinplatte-3200.webp 3200w" sizes="(min-width: 1650px) 1360px, (max-width: 900px) 100vw, 90vw"><img src="media/steinplatte/steinplatte-960.jpg" alt="Steinplatte" width="6270" height="3510" loading="lazy" decoding="async"></picture></button></div>
+        </div>
+
+        <nav class="project-nav">
+            <a class="project-nav-link prev" href="panama.html"><span class="label">Previous</span><span class="name">Panama</span></a><a class="project-nav-link next" href="chiemsee.html"><span class="label">Next</span><span class="name">Chiemsee</span></a>
+        </nav>
     </main>
 
-   <div id="lightbox" class="lightbox hidden">
-        <button id="close-lightbox" class="close-button">×</button>
-        <div class="lightbox-zone left-zone"></div>
-        <img id="lightbox-img" src="" alt="fullscreen image">
-        <div class="lightbox-zone right-zone"></div>
+    <footer class="site-footer">
+        <a href="mailto:info@lucastengel.com">info@lucastengel.com</a>
+        <span>&copy; Luca Stengel</span>
+    </footer>
+
+    <div id="lightbox" class="lightbox" hidden>
+        <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+        <img id="lightbox-img" src="" alt="">
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&#8250;</button>
+        <div class="lb-counter" id="lb-counter"></div>
     </div>
 
     <script src="project.js"></script>
-
-     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.querySelector('header').classList.toggle('expanded');
+    <script>
+        const burger = document.getElementById('hamburger');
+        burger.addEventListener('click', () => {
+            const open = document.body.classList.toggle('nav-open');
+            burger.setAttribute('aria-expanded', open);
         });
     </script>
 </body>

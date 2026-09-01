@@ -1,243 +1,337 @@
-body {
-    background-color: #adacac;
-    background-image: url("assets/Background/panama-371.jpg"); /* Pfad zum Bild */
-    background-size: cover; /* Bild skalieren, sodass es den gesamten Bereich abdeckt */
-    background-position: top; /* Bild zentrieren */
-    background-repeat: no-repeat; /* Bild nicht wiederholen */
-    
-    margin: 10px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+/* ───────────────────────────────────────────────────────────────
+   index.css — Startseite
 
-    font-family: 'Ubuntu', sans-serif;
-    color: white; /* Schriftfarbe */
-    font-size: 100%; /* Schriftgröße */
-    font-weight: normal; /* Schriftstärke */
-    text-align: left; /* Textausrichtung */
-    letter-spacing: 0.02em
+   Links die Projektliste, rechts mittig die Bildbühne. Ohne Hover
+   bleibt die Bühne schwarz; erst ein Titel holt das Bild hervor.
+
+   Die Bilder liegen im HTML in der Liste (für die mobile Ansicht),
+   auf dem Desktop hängt index.js sie nach  #stage  um.
+   ─────────────────────────────────────────────────────────────── */
+
+body.index-page {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100svh;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 9%;
-    padding: 0 20px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+/* Der Schriftzug steht auf der Startseite gross im Inhalt */
+.index-page .site-header .wordmark { opacity: 0; pointer-events: none; }
 
-    background-color: rgba(94, 93, 93, 0.35); /* leicht transparent */
-    backdrop-filter: blur(6px);             /* konstanter Blur */
-    -webkit-backdrop-filter: blur(4px);
-
-    z-index: 1000;
-}
-
-header.expanded {
-    height: 10vh; /* oder beliebig mehr Platz */
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 20px;
-    transition: height 0.3s ease;
-}
-
-h1 {
-    position: inherit;
-    top: 2vh;
-    size: 100%;
-    margin-top: 0px;
-    white-space: nowrap;
-    color: #f2f2f2; /* Schriftfarbe */
-}
-
-h1 a {
-    display: inline-block; /* wichtig für transform */
-    transition: transform 0.2s ease, text-decoration 0.2s ease;
-    text-decoration: none;
-    color: inherit;
-}
-
-h1 a:hover {
-    transform: scale(1.026); /* leicht vergrößern */
-    text-decoration: underline wavy;
-}
-
-.project {
-    display:block;               /* Flexbox verwenden */
-    flex-wrap: wrap;            /* Umbruch aktivieren */
-    justify-content: space-around; /* Abstand zwischen den Elementen */
-    padding: 20px;              /* Innenabstand für die Galerie */
-    border-style:none ;
-    border-radius: 10px;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-section.project {
-  margin-top: 7vh; /* Platz für den Header schaffen */
-}
-
-.image-wrapper {
-    flex: 1;         /* Bild nimmt flexiblen Platz */
-    max-width: 40%;  /* max Breite Bild */
-    overflow: hidden;
-    border: 8px solid white;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* sanfter Übergang */
-}
-
-.image-wrapper img:hover {
-    transform: scale(1.05); /* Bild wird 5% größer */
-}
-
-
-.text-wrapper {
-    flex: 1;          /* Text nimmt flexiblen Platz */
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: top; /* Text vertikal zentrieren */
-    color: white;      /* Textfarbe je nach Design anpassen */
-}
-
-
-.image-container {
-    display: flex;
-    max-width: 100%;    /* damit es sich anpasst */
-    margin: 10px;
-    text-align: left;
-    overflow: hidden;
-    border-style: none;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover; /* Bild skalieren, um den Container zu füllen */
-}
-
-.end{
-    flex: 1;
-}
-
-.footer {
-    color: #c5c5c5;
-    text-align: center; /* Text zentrieren */
-    padding: 10px 0; /* Abstand oben und unten */
-    margin-top: 20px; /* Abstand oben zum Inhalt */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-}
-
-.footer a {
-    color: #c5c5c5;         /* gleiche Farbe wie der Footer-Text */
-    text-decoration: none;  /* keine Unterstreichung */
-}
-
-.hamburger {
-    position: absolute;
-    top: 3.4vh;
-    right: 8vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-}
-
-.nav-links {
+main.index {
     position: relative;
-    top: 4vh;
-    left: 1vh;
-    display: none;           /* Standard: unsichtbar */
-    flex-direction: column;  /* Links untereinander */
-    gap: 1vh;               /* Abstand zwischen den Links */
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: calc(var(--header-h) + 4vh) var(--pad-x) 8vh;
+    z-index: 2;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.2s ease;
+/* ─── Kopf ───────────────────────────────────────────────────── */
+
+.index-intro {
+    margin-bottom: clamp(28px, 6vh, 70px);
+    /* Die Seite beginnt schwarz und baut sich von oben nach unten auf */
+    animation: rise 1.6s var(--ease) 0.45s both;
 }
 
-.nav-links a:hover {
-  text-decoration: underline wavy;
+.index-intro h1 {
+    font-size: clamp(2.6rem, 5.4vw, 4.6rem);
+    line-height: 1;
+    letter-spacing: 0.005em;
 }
 
-/* Wenn header expanded ist, zeigen wir die Links */
-header.expanded .nav-links {
-  display: flex;
+.index-intro p {
+    margin-top: 12px;
+    color: var(--faint);
+    font-size: 0.64rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
-@media (max-width: 800px) {
-    body {
-        background-size: auto 100%; /* Breite automatisch, Höhe 100% */
-        background-attachment: fixed;
-        background-position: top center;
-    }
-    
-    .image-container {
-        flex-direction: column;  /* Bild und Text untereinander */
-        max-width: 100%;         /* volle Breite */
+/* ─── Liste ──────────────────────────────────────────────────── */
+
+.project-index {
+    list-style: none;
+    max-width: min(34vw, 440px);
+    border-top: 1px solid var(--line);
+}
+
+.project-item { animation: rise 1.4s var(--ease) both; }
+.project-item:nth-child(1) { animation-delay: 0.85s; }
+.project-item:nth-child(2) { animation-delay: 1.00s; }
+.project-item:nth-child(3) { animation-delay: 1.15s; }
+.project-item:nth-child(4) { animation-delay: 1.30s; }
+.project-item:nth-child(5) { animation-delay: 1.45s; }
+.project-item:nth-child(6) { animation-delay: 1.60s; }
+.project-item:nth-child(n+7) { animation-delay: 1.75s; }
+
+.item-link {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr auto;
+    align-items: baseline;
+    gap: 0.8rem;
+    padding: clamp(9px, 1.4vh, 16px) 0;
+    border-bottom: 1px solid var(--line);
+    transition: opacity 0.5s var(--ease);
+}
+
+.item-link .num {
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
+    font-weight: 300;
+    color: var(--faint);
+    transition: color 0.5s var(--ease);
+}
+
+.item-link .title {
+    font-size: clamp(1.5rem, 2.5vw, 2.3rem);
+    line-height: 1.15;
+    letter-spacing: 0.005em;
+    color: var(--muted);
+    transition: color 0.5s var(--ease), transform 0.6s var(--ease);
+}
+
+.item-link .year {
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
+    font-weight: 300;
+    color: var(--faint);
+}
+
+/* Alles Übrige tritt zurück, sobald ein Titel angesteuert wird */
+.project-index:hover .project-item:not(:hover) .item-link,
+.project-index:focus-within .project-item:not(:focus-within) .item-link {
+    opacity: 0.34;
+}
+
+.project-item:hover .item-link .title,
+.project-item:focus-within .item-link .title {
+    color: var(--fg);
+    transform: translateX(14px);
+}
+
+.project-item:hover .item-link .num,
+.project-item:focus-within .item-link .num { color: var(--muted); }
+
+/* ─── Bildbühne (Desktop) ────────────────────────────────────── */
+
+@media (min-width: 901px) and (hover: hover) {
+    /* Solange index.js nicht umgehängt hat, bleiben Bild und Text unsichtbar */
+    .project-item > .item-media,
+    .project-item > .item-blurb { display: none; }
+
+    .stage {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
     }
 
-    .image-container .text-wrapper {
-        order: 1; /* zuerst */
+    .stage[hidden] { display: none; }
+
+    /* Bild und Beschreibung stehen als eine Gruppe in der rechten Hälfte,
+       vertikal zentriert — die linke Spalte bleibt unberührt schwarz. */
+    .stage-slot {
+        position: absolute;
+        top: 50%;
+        right: clamp(24px, 4vw, 72px);
+        transform: translateY(-50%);
+        width: min(38vw, 560px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        /* Tiefe für die waagerechte Drehung des Bildes. Weiter weg heisst
+           flacher — die Drehung bleibt lesbar, ohne zu verzerren. */
+        perspective: 2200px;
     }
 
-    .image-container .image-wrapper {
-        order: 2; /* danach */
-    }
+    /* Für den Moment, in dem index.js das Bild ohne Bewegung auf die
+       richtige Seite setzt */
+    .stage-slot.no-anim .item-media { transition: none !important; }
 
-    .image-wrapper {
-        max-width: 100%;
-        flex: none;
-        height: auto;          /* ← wichtig */
-        overflow: hidden;
-    }
-
-    .image-wrapper img {
+    .item-media {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         width: 100%;
-        height: auto;          /* ← proportional skalieren */
-        display: block;        /* ← verhindert extra whitespace bei inline-elementen */
+        height: min(54svh, 460px);
+        /* Nicht ganz null: ein vollständig durchsichtiges Element zeichnet der
+           Browser gar nicht erst, und die Ebene entsteht dann erst beim ersten
+           Hover — genau dort ruckelte die erste Drehung. */
+        opacity: 0.001;
+        /* Ruhelage: klein, dunkel, seitlich versetzt und um die senkrechte
+           Achse weggedreht — die Drehung läuft also waagerecht, wie bei einem
+           Karussell. Welche Seite, bestimmt die Laufrichtung. */
+        transform: translateX(6%) rotateY(7deg) scale(0.93);
+        /* Ohne Unschärfe: die muss in jedem Einzelbild neu gerechnet werden
+           und war der Grund, warum die Drehung stockte. Das Auftauchen aus dem
+           Schwarz trägt jetzt die Helligkeit. */
+        filter: brightness(0.22) saturate(0.6);
+        /* Abgang: kurz und entschlossen, damit die Bühne schnell frei ist */
+        transition: opacity 0.18s var(--ease-in),
+                    transform 0.4s var(--ease-glide),
+                    filter 0.18s var(--ease-in);
+        /* Dreht ein grosses Bild im Raum, hilft eine eigene Ebene gegen
+           Ruckeln beim Neuzeichnen */
+        will-change: transform, opacity, filter;
+        backface-visibility: hidden;
+    }
+
+    /* Nach unten in der Liste: das alte Bild zieht nach links hinaus,
+       das neue kommt von rechts nach */
+    .stage[data-dir="fwd"] .stage-slot .item-media {
+        transform: translateX(6%) rotateY(7deg) scale(0.93);
+    }
+
+    .stage[data-dir="fwd"] .stage-slot.is-leaving .item-media {
+        transform: translateX(-6%) rotateY(-7deg) scale(0.93);
+    }
+
+    /* Nach oben: genau andersherum */
+    .stage[data-dir="back"] .stage-slot .item-media {
+        transform: translateX(-6%) rotateY(-7deg) scale(0.93);
+    }
+
+    .stage[data-dir="back"] .stage-slot.is-leaving .item-media {
+        transform: translateX(6%) rotateY(7deg) scale(0.93);
+    }
+
+    /* Ganzes Bild, nichts beschnitten — die Kanten verlaufen nur sanft */
+    .item-media picture {
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .item-media img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: min(54svh, 460px);
+        object-fit: contain;
+        -webkit-mask-image: radial-gradient(ellipse at center,
+            #000 72%, rgba(0, 0, 0, 0.86) 90%, rgba(0, 0, 0, 0.6) 100%);
+        mask-image: radial-gradient(ellipse at center,
+            #000 72%, rgba(0, 0, 0, 0.86) 90%, rgba(0, 0, 0, 0.6) 100%);
+    }
+
+    /* Auftritt erst, wenn das vorige Bild verschwunden ist — dazwischen
+       steht einen Moment lang nur Schwarz */
+    .stage[data-dir] .stage-slot.is-active .item-media,
+    .stage-slot.is-active .item-media {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg) scale(1);
+        filter: brightness(0.94) saturate(0.98);
+        /* Unschärfe und Helligkeit sind vor der Bewegung fertig: das Bild ist
+           früh sauber zu sehen und wächst dann nur noch ruhig aus */
+        /* Nach 0,2 s ist die Bühne schwarz und das neue Bild setzt ein. Licht
+           und Deckkraft sind schnell da, nur die Drehung läuft lang aus. */
+        transition: opacity 0.42s var(--ease-out) 0.2s,
+                    filter 0.5s var(--ease-out) 0.2s,
+                    transform 0.9s var(--ease-glide) 0.2s;
+    }
+
+    .item-blurb {
+        max-width: 40ch;
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.15s var(--ease-in), transform 0.15s var(--ease-in);
+    }
+
+    .stage-slot.is-active .item-blurb {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.4s var(--ease-out) 0.3s, transform 0.45s var(--ease-out) 0.3s;
+    }
+}
+
+.item-blurb p {
+    font-size: 0.9rem;
+    line-height: 1.85;
+    font-weight: 200;
+    color: var(--muted);
+}
+
+.item-blurb .detail {
+    margin-top: 14px;
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--faint);
+}
+
+/* ─── Mobil / ohne Hover ─────────────────────────────────────── */
+
+@media (max-width: 900px), (hover: none) {
+    body.index-page { display: block; }
+
+    main.index {
+        display: block;
+        padding: calc(var(--header-h) + 26px) var(--pad-x) 40px;
+    }
+
+    main.index::before { display: none; }
+    .stage { display: none; }
+
+    .index-page .site-header .wordmark { opacity: 1; pointer-events: auto; }
+
+    .index-intro { margin-bottom: 30px; }
+    .index-intro h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
+
+    .project-index {
+        max-width: none;
+        border-top: none;
+    }
+
+    .project-item {
+        position: relative;
+        margin-bottom: 34px;
+    }
+
+    .item-media {
+        position: relative;
+        width: 100%;
+        height: 62vw;
+        max-height: 380px;
+        filter: brightness(0.62) saturate(0.9);
+        -webkit-mask-image: linear-gradient(to bottom, #000 55%, rgba(0, 0, 0, 0.35) 100%);
+        mask-image: linear-gradient(to bottom, #000 55%, rgba(0, 0, 0, 0.35) 100%);
+    }
+
+    .item-media picture { display: block; width: 100%; height: 100%; }
+
+    .item-media img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
-
-    .text-wrapper {
-        padding-left: 0;         /* kein Abstand links */
-        margin-top: 10px;        /* Abstand über dem Text */
-        flex: none;              /* kein flex-grow */
-        width: 100%;             /* volle Breite */
+    .item-link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        grid-template-columns: auto 1fr auto;
+        gap: 0.8rem;
+        padding: 0 4px 8px;
+        border-bottom: none;
     }
 
-    section.project {
-        margin-top: 3vh;  /* vorher 7vh, weniger Abstand nach oben */
-        padding: 10px;    /* ggf. padding reduzieren */
+    .item-link .title { color: var(--fg); font-size: clamp(1.6rem, 7vw, 2.2rem); }
+    .item-link .num, .item-link .year { color: var(--muted); }
+
+    .item-blurb {
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        margin-top: 12px;
     }
 
-    .project {
-        margin-left: 0.5%; /* kleinerer Rand links/rechts */
-        margin-right: 0.5%;
-    }
+    .item-blurb p { font-size: 0.86rem; }
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: none; }
 }
