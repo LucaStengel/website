@@ -211,14 +211,10 @@ def site_header(active: str = "") -> str:
     </header>"""
 
 
-# Die wandernden Wellenebenen des Hintergrunds. Jeder Zug läuft doppelt,
-# versetzt und überblendend — siehe base.css.
-BACKDROP = """    <div class="backdrop" aria-hidden="true">
-        <span class="wave wave-a1"></span>
-        <span class="wave wave-a2"></span>
-        <span class="wave wave-b1"></span>
-        <span class="wave wave-b2"></span>
-    </div>"""
+# Der Hintergrund: backdrop.js zeichnet darin das Punktefeld und setzt den
+# Kritzelzeiger — siehe dort.
+BACKDROP = """    <div class="backdrop" aria-hidden="true"></div>
+    <script src="backdrop.js" defer></script>"""
 
 
 SITE_FOOTER = f"""    <footer class="site-footer">
