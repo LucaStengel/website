@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum — Luca Stengel</title>
+    <meta name="description" content="Impressum von lucastengel.com.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="impressum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="legal-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html">Luca Stengel</a>
+        <nav class="nav-links" id="nav">
+            <a href="index.html">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="mailto:info@lucastengel.com">Contact</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="backdrop" aria-hidden="true">
+        <span class="wave wave-a1"></span>
+        <span class="wave wave-a2"></span>
+        <span class="wave wave-b1"></span>
+        <span class="wave wave-b2"></span>
+    </div>
+
+    <main class="legal">
+        <p class="eyebrow">Legal</p>
+        <h1>Impressum</h1>
+
+        <section>
+            <h2 class="label">Angaben gemäss § 5 DDG</h2>
+            <address>
+                Luca Stengel<br>
+                Stefan-George-Ring 58<br>
+                81929 München<br>
+                Deutschland
+            </address>
+        </section>
+
+        <section>
+            <h2 class="label">Kontakt</h2>
+            <p>E-Mail: <a href="mailto:info@lucastengel.com">info@lucastengel.com</a></p>
+        </section>
+
+        <section>
+            <h2 class="label">Urheberrecht</h2>
+            <p>
+                Alle Fotografien und Inhalte auf dieser Website sind urheberrechtlich geschützt.
+                Jede Verwendung ausserhalb der Grenzen des Urheberrechts bedarf der vorherigen
+                schriftlichen Zustimmung von Luca Stengel.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="mailto:info@lucastengel.com">info@lucastengel.com</a>
+        <span>&copy; Luca Stengel</span>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('hamburger');
+        burger.addEventListener('click', () => {
+            const open = document.body.classList.toggle('nav-open');
+            burger.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

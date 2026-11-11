@@ -221,6 +221,12 @@ BACKDROP = """    <div class="backdrop" aria-hidden="true">
     </div>"""
 
 
+SITE_FOOTER = f"""    <footer class="site-footer">
+        <a href="mailto:{EMAIL}">{EMAIL}</a>
+        <span>&copy; {SITE_NAME}</span>
+    </footer>"""
+
+
 NAV_SCRIPT = """    <script>
         const burger = document.getElementById('hamburger');
         burger.addEventListener('click', () => {
@@ -333,10 +339,7 @@ def generate_project_page(slug, meta, entries, images, position, total, neighbou
         </nav>
     </main>
 
-    <footer class="site-footer">
-        <a href="mailto:{EMAIL}">{EMAIL}</a>
-        <span>&copy; {SITE_NAME}</span>
-    </footer>
+{SITE_FOOTER}
 
     <div id="lightbox" class="lightbox" hidden>
         <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
@@ -408,10 +411,7 @@ def generate_index(projects: list) -> None:
         </ol>
     </main>
 
-    <footer class="site-footer">
-        <a href="mailto:{EMAIL}">{EMAIL}</a>
-        <span>&copy; {SITE_NAME}</span>
-    </footer>
+{SITE_FOOTER}
 
     <script src="index.js"></script>
 {NAV_SCRIPT}

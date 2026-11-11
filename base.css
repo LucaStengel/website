@@ -366,6 +366,8 @@ h1, h2, .title, .name {
 .site-footer a { transition: color 0.3s var(--ease); }
 .site-footer a:hover { color: var(--fg); }
 
+.footer-meta { display: flex; gap: 28px; }
+
 /* ─── Mobiles Menü ───────────────────────────────────────────── */
 
 @media (max-width: 700px) {
